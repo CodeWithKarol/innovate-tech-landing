@@ -77,16 +77,8 @@ A modern, fully responsive landing page for InnovateTech's AI-powered learning p
   ```
 - **Fluid Spacing Scale** using `clamp()`:
   ```css
-  --space-s: clamp(
-  	1rem,
-  	0.87rem + 0.65vw,
-  	1.38rem
-  );
-  --space-m: clamp(
-  	1.5rem,
-  	1.37rem + 0.65vw,
-  	1.88rem
-  );
+  --space-s: clamp(1rem, 0.87rem + 0.65vw, 1.38rem);
+  --space-m: clamp(1.5rem, 1.37rem + 0.65vw, 1.88rem);
   ```
 
 ### Logical Properties
@@ -106,12 +98,12 @@ Component-level responsive design:
 
 ```css
 .benefits-grid {
-	container-type: inline-size;
+  container-type: inline-size;
 }
 @container (min-width: 700px) {
-	.benefit-card {
-		/* Adapt to container */
-	}
+  .benefit-card {
+    /* Adapt to container */
+  }
 }
 ```
 
@@ -128,17 +120,13 @@ Responsive text scaling without media queries:
 
 ```css
 h1 {
-	font-size: clamp(2rem, 6vw, 3.5rem);
+  font-size: clamp(2rem, 6vw, 3.5rem);
 }
 h2 {
-	font-size: clamp(1.75rem, 5vw, 2.5rem);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
 }
 body {
-	font-size: clamp(
-		1rem,
-		0.98rem + 0.11vw,
-		1.06rem
-	);
+  font-size: clamp(1rem, 0.98rem + 0.11vw, 1.06rem);
 }
 ```
 
@@ -246,22 +234,13 @@ Modern CSS Grid with flexible columns:
 
 ```css
 .benefits-grid {
-	grid-template-columns: repeat(
-		auto-fit,
-		minmax(min(100%, 280px), 1fr)
-	);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
 .steps-grid {
-	grid-template-columns: repeat(
-		auto-fit,
-		minmax(min(100%, 250px), 1fr)
-	);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
 }
 .pricing-grid {
-	grid-template-columns: repeat(
-		auto-fit,
-		minmax(min(100%, 280px), 1fr)
-	);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
 }
 ```
 
@@ -452,11 +431,7 @@ Primary brand colors are defined in both files for compatibility:
 
 ```css
 /* Main turquoise gradient */
-background: linear-gradient(
-	135deg,
-	#40e0d0,
-	#26b4aa
-);
+background: linear-gradient(135deg, #40e0d0, #26b4aa);
 color: #40e0d0;
 ```
 
@@ -464,18 +439,10 @@ color: #40e0d0;
 
 ```css
 :root {
-	--color-primary: hsl(
-		174,
-		72%,
-		56%
-	); /* #40E0D0 */
-	--color-primary-dark: hsl(
-		174,
-		72%,
-		36%
-	); /* #26B4AA */
-	--color-text: hsl(215, 25%, 27%);
-	--color-background: hsl(0, 0%, 100%);
+  --color-primary: hsl(174, 72%, 56%); /* #40E0D0 */
+  --color-primary-dark: hsl(174, 72%, 36%); /* #26B4AA */
+  --color-text: hsl(215, 25%, 27%);
+  --color-background: hsl(0, 0%, 100%);
 }
 ```
 
@@ -492,22 +459,10 @@ Adjust fluid spacing in `modern-styles.css`:
 
 ```css
 :root {
-	--space-xs: clamp(
-		0.5rem,
-		0.37rem + 0.65vw,
-		0.88rem
-	);
-	--space-s: clamp(
-		1rem,
-		0.87rem + 0.65vw,
-		1.38rem
-	);
-	--space-m: clamp(
-		1.5rem,
-		1.37rem + 0.65vw,
-		1.88rem
-	);
-	/* Adjust clamp() values for different scaling */
+  --space-xs: clamp(0.5rem, 0.37rem + 0.65vw, 0.88rem);
+  --space-s: clamp(1rem, 0.87rem + 0.65vw, 1.38rem);
+  --space-m: clamp(1.5rem, 1.37rem + 0.65vw, 1.88rem);
+  /* Adjust clamp() values for different scaling */
 }
 ```
 
@@ -575,6 +530,32 @@ All content is in `index.html`:
 ✅ Page Visibility API for resource management
 
 ## 🔧 Recent Fixes & Improvements
+
+### Main Section Scroll Animations - Enhanced (Nov 2025)
+
+- ✅ **Animated section headers** - All `.section-header`, `.section-title`, and `.section-subtitle` elements now fade in on scroll
+- ✅ **Smooth transitions** - Added `transition: opacity 0.6s ease, transform 0.6s ease;` to section elements
+- ✅ **Intersection Observer** - Extended to track section titles and headers for scroll-triggered animations
+- ✅ **Staggered animations** - Section elements animate in smoothly as they enter the viewport
+- ✅ **Performance optimized** - Uses efficient Intersection Observer API instead of scroll handlers
+- ✅ **Consistent with cards** - Section titles animate the same way as benefit cards, testimonials, and pricing cards
+
+### Hero Section Mobile Stacking - Fixed (Nov 2025)
+
+- ✅ **Fixed HTML structure** - Removed extra closing divs that placed hero-visual outside hero-container
+- ✅ **Hero cards now stack vertically on mobile** - Cards display in single column on 600px and below breakpoints
+- ✅ **Proper flexbox layout** - Hero container uses `display: flex; flex-direction: column !important;` at mobile breakpoints
+- ✅ **Consistent card sizing** - Added `flex: none !important; width: 100%;` to hero-card at mobile sizes
+- ✅ **Mobile first approach** - All mobile breakpoints (600px, 480px, 375px) have proper flex-column layout
+
+### Testimonial Cards Alignment - Fixed (Nov 2025)
+
+- ✅ **Uniform author info height** - Added `min-height: 70px` to `.testimonial-author-info`
+- ✅ **Consistent content blocks** - Wrapped header and text in `.testimonial-content` with `min-height: 140px`
+- ✅ **Proper vertical distribution** - Used `justify-content: space-between` on card to push author info to bottom
+- ✅ **Truncated long roles** - Added `white-space: nowrap; overflow: hidden; text-overflow: ellipsis;` to author-role
+- ✅ **Fixed line heights** - Set `line-height: 1.3` on author-name and author-role for consistent wrapping
+- ✅ **Grid alignment** - Added `align-items: stretch` to testimonials-grid for equal height cards
 
 ### Overlap Issues Fixed - All Resolutions (Oct 2025)
 
@@ -654,6 +635,6 @@ InnovateTech Landing Page - A modern showcase of HTML5, CSS3, and vanilla JavaSc
 
 ---
 
-**Version**: 2.1 (Overlap Fixes & Enhanced Responsiveness)  
-**Last Updated**: October 2025  
+**Version**: 2.3 (Main Section Scroll Animations Enhanced)  
+**Last Updated**: November 2025  
 **Compatibility**: Modern browsers with progressive enhancement for older versions
