@@ -1,734 +1,1466 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
-		/>
-		<meta
-			name="theme-color"
-			content="#40E0D0"
-		/>
-		<meta
-			name="mobile-web-app-capable"
-			content="yes"
-		/>
-		<meta
-			name="apple-mobile-web-app-status-bar-style"
-			content="default"
-		/>
-		<title>
-			InnovateTech - AI-Powered Learning Platform
-		</title>
-		<meta
-			name="description"
-			content="Unlock every student's potential with AI-powered learning. Personalized, adaptive learning experiences that evolve with every learner."
-		/>
-		<link
-			rel="stylesheet"
-			href="styles.css"
-		/>
-		<link
-			rel="preconnect"
-			href="https://fonts.googleapis.com"
-		/>
-		<link
-			rel="preconnect"
-			href="https://fonts.gstatic.com"
-			crossorigin
-		/>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
-	<body>
-		<!-- Navigation -->
-		<header role="banner">
-			<nav
-				class="navbar"
-				id="navbar"
-				role="navigation"
-				aria-label="Main navigation"
-			>
-				<div class="nav-container">
-					<div class="nav-brand">
-						<img
-							src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik0xMiAxNkgxNlYyNEgxMlYxNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xOCAxMkgyMlYyOEgxOFYxMloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNCAxNkgyOFYyNEgyNFYxNloiIGZpbGw9IndoaXRlIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MF9saW5lYXJfMV8xIiB4MT0iMCIgeTE9IjAiIHgyPSI0MCIgeTI9IjQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM0MEUwRDAiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjZCNEFBIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+"
-							alt="InnovateTech Logo"
-							class="logo"
-						/>
-						<span>InnovateTech</span>
-					</div>
-					<div
-						class="nav-menu"
-						id="nav-menu"
-					>
-						<a
-							href="#features"
-							class="nav-link"
-							>Features</a
-						>
-						<a
-							href="#how-it-works"
-							class="nav-link"
-							>How It Works</a
-						>
-						<a
-							href="#for-schools"
-							class="nav-link"
-							>For Schools</a
-						>
-						<a
-							href="#pricing"
-							class="nav-link"
-							>Pricing</a
-						>
-						<a
-							href="#contact"
-							class="nav-link"
-							>Contact</a
-						>
-						<button
-							class="btn btn-primary nav-cta"
-						>
-							Book Demo
-						</button>
-					</div>
-					<div
-						class="hamburger"
-						id="hamburger"
-					>
-						<span></span>
-						<span></span>
-						<span></span>
-					</div>
-				</div>
-			</nav>
-		</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+    />
+    <meta name="theme-color" content="#40E0D0" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>InnovateTech - AI-Powered Learning Platform</title>
+    <meta
+      name="description"
+      content="Unlock every student's potential with AI-powered learning. Personalized, adaptive learning experiences that evolve with every learner."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header role="banner">
+      <nav
+        class="navbar"
+        id="navbar"
+        role="navigation"
+        aria-label="Main navigation"
+      >
+        <div class="nav-container">
+          <div class="nav-brand">
+            <img
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik0xMiAxNkgxNlYyNEgxMlYxNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xOCAxMkgyMlYyOEgxOFYxMloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNCAxNkgyOFYyNEgyNFYxNloiIGZpbGw9IndoaXRlIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MF9saW5lYXJfMV8xIiB4MT0iMCIgeTE9IjAiIHgyPSI0MCIgeTI9IjQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM0MEUwRDAiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjZCNEFBIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+"
+              alt="InnovateTech Logo"
+              class="logo"
+            />
+            <span>InnovateTech</span>
+          </div>
+          <div class="nav-menu" id="nav-menu">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+            <a href="#for-schools" class="nav-link">For Schools</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <button class="btn btn-primary nav-cta">Book Demo</button>
+          </div>
+          <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-		<!-- Hero Section -->
-		<main>
-			<section
-				class="hero"
-				id="hero"
-				aria-labelledby="hero-title"
-			>
-				<div class="hero-container">
-					<div class="hero-content">
-						<h1
-							class="hero-title"
-							id="hero-title"
-						>
-							Unlock Every Student's Potential
-							with
-							<span class="gradient-text"
-								>AI-Powered Learning</span
-							>
-						</h1>
-						<p class="hero-subtitle">
-							InnovateTech delivers personalized,
-							adaptive learning experiences that
-							evolve with every learner.
-						</p>
-						<div class="hero-cta">
-							<button
-								class="btn btn-primary btn-lg"
-								id="primary-cta"
-							>
-								Book a Free Demo
-							</button>
-							<button
-								class="btn btn-secondary btn-lg"
-							>
-								Try It for Free
-							</button>
-						</div>
-					</div>
-					<div class="hero-visual">
-						<div
-							class="neural-network"
-							id="neural-network"
-							role="img"
-							aria-label="Animated neural network visualization"
-						>
-							<div class="network-center">
-								<div class="learner-avatars">
-									<div
-										class="avatar avatar-1"
-									></div>
-									<div
-										class="avatar avatar-2"
-									></div>
-									<div
-										class="avatar avatar-3"
-									></div>
-									<div
-										class="avatar avatar-4"
-									></div>
-								</div>
-							</div>
-							<div class="network-nodes">
-								<div class="node node-1"></div>
-								<div class="node node-2"></div>
-								<div class="node node-3"></div>
-								<div class="node node-4"></div>
-								<div class="node node-5"></div>
-								<div class="node node-6"></div>
-								<div class="node node-7"></div>
-								<div class="node node-8"></div>
-							</div>
-							<div class="network-connections">
-								<svg
-									class="connections-svg"
-									viewBox="0 0 400 400"
-								>
-									<defs>
-										<linearGradient
-											id="connectionGradient"
-											x1="0%"
-											y1="0%"
-											x2="100%"
-											y2="100%"
-										>
-											<stop
-												offset="0%"
-												style="
-													stop-color: #40e0d0;
-													stop-opacity: 0.8;
-												"
-											/>
-											<stop
-												offset="100%"
-												style="
-													stop-color: #26b4aa;
-													stop-opacity: 0.3;
-												"
-											/>
-										</linearGradient>
-									</defs>
-								</svg>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+    <!-- Hero Section -->
+    <main>
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <!-- Decorative background elements -->
+        <div class="hero-decoration">
+          <div class="decoration-blob blob-1"></div>
+          <div class="decoration-blob blob-2"></div>
+          <div class="decoration-blob blob-3"></div>
+          <div class="decoration-glow glow-1"></div>
+          <div class="decoration-glow glow-2"></div>
+        </div>
 
-			<!-- How It Works Section -->
-			<section
-				class="how-it-works"
-				id="how-it-works"
-				aria-labelledby="how-title"
-			>
-				<div class="container">
-					<h2
-						class="section-title"
-						id="how-title"
-					>
-						How It Works
-					</h2>
-					<div class="steps-grid">
-						<div class="step">
-							<div class="step-icon">
-								<div class="icon-assess"></div>
-							</div>
-							<h3>Assess</h3>
-							<p>
-								AI analyzes each student's
-								learning patterns, strengths, and
-								areas for improvement in
-								real-time.
-							</p>
-						</div>
-						<div class="step">
-							<div class="step-icon">
-								<div class="icon-adapt"></div>
-							</div>
-							<h3>Adapt</h3>
-							<p>
-								Content and teaching methods
-								automatically adjust to match each
-								learner's unique needs and pace.
-							</p>
-						</div>
-						<div class="step">
-							<div class="step-icon">
-								<div class="icon-advance"></div>
-							</div>
-							<h3>Advance</h3>
-							<p>
-								Students progress confidently with
-								personalized learning paths that
-								evolve as they grow.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+        <div class="hero-container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-icon">✨</span>
+              <span class="badge-text">AI-Powered Learning Platform</span>
+            </div>
+            <h1 class="hero-title" id="hero-title">
+              <span class="title-line">Unlock Every</span>
+              <span class="title-line"
+                >Student's <span class="gradient-text">Potential</span></span
+              >
+              <span class="title-line"
+                >with Advanced
+                <span class="gradient-text">AI Learning</span></span
+              >
+            </h1>
+            <p class="hero-subtitle">
+              Transform education with personalized, adaptive learning
+              experiences. InnovateTech powers educators to unlock student
+              potential at scale.
+            </p>
+            <div class="hero-cta">
+              <button class="btn btn-primary btn-lg" id="primary-cta">
+                <span class="btn-icon">→</span>
+                Book a Free Demo
+              </button>
+              <button class="btn btn-secondary btn-lg">
+                <span class="btn-icon">▶</span>
+                Watch Demo
+              </button>
+            </div>
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-number">10K+</span>
+                <span class="stat-label">Educators</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">500K+</span>
+                <span class="stat-label">Students</span>
+              </div>
+              <div class="stat">
+                <span class="stat-number">99.8%</span>
+                <span class="stat-label">Uptime</span>
+              </div>
+            </div>
+          </div>
 
-			<!-- Benefits Section -->
-			<section
-				class="benefits"
-				id="features"
-				aria-labelledby="benefits-title"
-			>
-				<div class="container">
-					<h2
-						class="section-title"
-						id="benefits-title"
-					>
-						Tailored Outcomes for Everyone
-					</h2>
-					<div class="benefits-grid">
-						<div class="benefit-card">
-							<div
-								class="benefit-icon student-icon"
-							></div>
-							<h3>For Students</h3>
-							<p>
-								Personalized learning experiences
-								that adapt to your pace, keeping
-								you engaged and motivated
-								throughout your educational
-								journey.
-							</p>
-						</div>
-						<div class="benefit-card">
-							<div
-								class="benefit-icon teacher-icon"
-							></div>
-							<h3>For Teachers</h3>
-							<p>
-								Powerful insights and analytics
-								that help you understand each
-								student's progress and customize
-								your teaching approach.
-							</p>
-						</div>
-						<div class="benefit-card">
-							<div
-								class="benefit-icon parent-icon"
-							></div>
-							<h3>For Parents</h3>
-							<p>
-								Clear visibility into your child's
-								learning progress with engaging
-								reports that show real growth and
-								achievements.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+          <!-- Hero Visual - Modern Card -->
+          <div class="hero-visual">
+            <div class="hero-card">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path
+                      d="M12 2L15 8H22L17 12L19 18L12 14L5 18L7 12L2 8H9L12 2Z"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h3 class="card-title">AI-Powered Insights</h3>
+                <p class="card-description">
+                  Real-time analytics and personalized learning paths
+                </p>
+                <div class="card-features">
+                  <span class="feature-badge">Advanced Analytics</span>
+                  <span class="feature-badge">Adaptive Learning</span>
+                  <span class="feature-badge">Real-Time Feedback</span>
+                </div>
+              </div>
+            </div>
+            <div class="hero-card card-secondary">
+              <div class="card-glow"></div>
+              <div class="card-content">
+                <div class="card-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="10" />
+                    <path
+                      d="M12 6V12L16 14"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                </div>
+                <h3 class="card-title">24/7 Support</h3>
+                <p class="card-description">
+                  Always available to help educators succeed
+                </p>
+                <div class="card-stats">
+                  <div class="stat-mini">
+                    <span class="stat-mini-number">99.8%</span>
+                    <span class="stat-mini-label">Uptime</span>
+                  </div>
+                  <div class="stat-mini">
+                    <span class="stat-mini-number">2m</span>
+                    <span class="stat-mini-label">Response</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-			<!-- Video Demo Section -->
-			<section
-				class="demo"
-				id="demo"
-			>
-				<div class="container">
-					<h2 class="section-title">
-						See InnovateTech in Action
-					</h2>
-					<div class="demo-container">
-						<div class="video-placeholder">
-							<div
-								class="play-button"
-								id="play-demo"
-							>
-								<svg
-									width="60"
-									height="60"
-									viewBox="0 0 60 60"
-									fill="none"
-								>
-									<circle
-										cx="30"
-										cy="30"
-										r="30"
-										fill="rgba(64, 224, 208, 0.2)"
-									/>
-									<path
-										d="M25 20L40 30L25 40V20Z"
-										fill="#40E0D0"
-									/>
-								</svg>
-							</div>
-							<p>
-								Watch our 60-second product
-								overview
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
+      <!-- How It Works Section -->
+      <section
+        class="how-it-works"
+        id="how-it-works"
+        aria-labelledby="how-title"
+      >
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" id="how-title">
+              <span class="title-gradient">Intelligent Learning</span> in Three
+              Steps
+            </h2>
+            <p class="section-subtitle">
+              Our AI-powered platform adapts in real-time to each learner's
+              needs
+            </p>
+          </div>
 
-			<!-- Testimonials Section -->
-			<section
-				class="testimonials"
-				aria-labelledby="testimonials-title"
-			>
-				<div class="container">
-					<h2
-						class="section-title"
-						id="testimonials-title"
-					>
-						What Educators Are Saying
-					</h2>
-					<div class="testimonials-grid">
-						<div class="testimonial">
-							<div class="quote-icon">"</div>
-							<p>
-								"InnovateTech has transformed how
-								my students learn. The AI adapts
-								to each child's needs, and I can
-								see remarkable improvements in
-								engagement and understanding."
-							</p>
-							<div class="testimonial-author">
-								<strong>Sarah Chen</strong>
-								<span>5th Grade Teacher</span>
-							</div>
-						</div>
-						<div class="testimonial">
-							<div class="quote-icon">"</div>
-							<p>
-								"The insights provided help me
-								identify learning gaps early and
-								adjust my teaching methods. It's
-								like having a teaching assistant
-								that never sleeps."
-							</p>
-							<div class="testimonial-author">
-								<strong
-									>Dr. Michael Rodriguez</strong
-								>
-								<span
-									>Principal, Innovation Middle
-									School</span
-								>
-							</div>
-						</div>
-						<div class="testimonial">
-							<div class="quote-icon">"</div>
-							<p>
-								"My daughter went from struggling
-								with math to actually enjoying it.
-								The personalized approach made all
-								the difference in her confidence
-								and performance."
-							</p>
-							<div class="testimonial-author">
-								<strong>Jennifer Park</strong>
-								<span>Parent of 7th Grader</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+          <div class="steps-container">
+            <!-- Step Connector Line -->
+            <div class="steps-connector"></div>
 
-			<!-- Schools Section -->
-			<section
-				class="for-schools"
-				id="for-schools"
-			>
-				<div class="container">
-					<div class="schools-content">
-						<h2 class="section-title">
-							Built for Educational Excellence
-						</h2>
-						<div class="schools-features">
-							<div class="feature">
-								<h3>District-Wide Integration</h3>
-								<p>
-									Seamlessly integrates with your
-									existing LMS and student
-									information systems.
-								</p>
-							</div>
-							<div class="feature">
-								<h3>Comprehensive Analytics</h3>
-								<p>
-									Track student progress, identify
-									trends, and make data-driven
-									decisions across your entire
-									district.
-								</p>
-							</div>
-							<div class="feature">
-								<h3>Professional Development</h3>
-								<p>
-									Ongoing training and support to
-									help educators maximize the
-									potential of AI-powered
-									learning.
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+            <div class="steps-grid">
+              <!-- Step 1 -->
+              <div class="step">
+                <div class="step-number">01</div>
+                <div class="step-card">
+                  <div class="step-icon-wrapper">
+                    <div class="step-icon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M9 12L11 14L15 10" />
+                      </svg>
+                    </div>
+                    <div class="icon-background"></div>
+                  </div>
+                  <h3 class="step-title">Assess</h3>
+                  <p class="step-description">
+                    AI analyzes each student's learning patterns, strengths, and
+                    areas for improvement in real-time with unprecedented
+                    accuracy.
+                  </p>
+                  <ul class="step-features">
+                    <li>Real-time analytics</li>
+                    <li>Learning pattern detection</li>
+                    <li>Performance insights</li>
+                  </ul>
+                </div>
+              </div>
 
-			<!-- Pricing Section -->
-			<section
-				class="pricing"
-				id="pricing"
-			>
-				<div class="container">
-					<h2 class="section-title">
-						Choose Your Plan
-					</h2>
-					<div class="pricing-grid">
-						<div class="pricing-card">
-							<h3>Educator</h3>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="amount">29</span>
-								<span class="period">/month</span>
-							</div>
-							<ul class="features-list">
-								<li>Up to 30 students</li>
-								<li>Basic analytics</li>
-								<li>Email support</li>
-								<li>Core AI features</li>
-							</ul>
-							<button class="btn btn-outline">
-								Start Free Trial
-							</button>
-						</div>
-						<div class="pricing-card featured">
-							<div class="popular-badge">
-								Most Popular
-							</div>
-							<h3>School</h3>
-							<div class="price">
-								<span class="currency">$</span>
-								<span class="amount">99</span>
-								<span class="period">/month</span>
-							</div>
-							<ul class="features-list">
-								<li>Up to 500 students</li>
-								<li>Advanced analytics</li>
-								<li>Priority support</li>
-								<li>Full AI suite</li>
-								<li>Teacher training</li>
-							</ul>
-							<button class="btn btn-primary">
-								Book Demo
-							</button>
-						</div>
-						<div class="pricing-card">
-							<h3>District</h3>
-							<div class="price">
-								<span class="currency"
-									>Custom</span
-								>
-							</div>
-							<ul class="features-list">
-								<li>Unlimited students</li>
-								<li>Enterprise analytics</li>
-								<li>Dedicated support</li>
-								<li>Custom integrations</li>
-								<li>On-site training</li>
-							</ul>
-							<button class="btn btn-outline">
-								Contact Sales
-							</button>
-						</div>
-					</div>
-				</div>
-			</section>
+              <!-- Step 2 -->
+              <div class="step">
+                <div class="step-number">02</div>
+                <div class="step-card">
+                  <div class="step-icon-wrapper">
+                    <div class="step-icon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M12 7V12L15 15" />
+                        <path d="M9 9C7.9 8 5.5 7 4 9" />
+                      </svg>
+                    </div>
+                    <div class="icon-background"></div>
+                  </div>
+                  <h3 class="step-title">Adapt</h3>
+                  <p class="step-description">
+                    Content and teaching methods automatically adjust to match
+                    each learner's unique needs, pace, and learning style.
+                  </p>
+                  <ul class="step-features">
+                    <li>Dynamic content adjustment</li>
+                    <li>Personalized pace</li>
+                    <li>Learning style matching</li>
+                  </ul>
+                </div>
+              </div>
 
-			<!-- CTA Section -->
-			<section
-				class="cta-section"
-				aria-labelledby="cta-title"
-			>
-				<div class="container">
-					<div class="cta-content">
-						<h2 id="cta-title">
-							Ready to Transform Learning?
-						</h2>
-						<p>
-							Join thousands of educators already
-							using InnovateTech to unlock student
-							potential.
-						</p>
-						<div class="cta-buttons">
-							<button
-								class="btn btn-primary btn-lg"
-							>
-								Book a Free Demo
-							</button>
-							<button
-								class="btn btn-secondary btn-lg"
-							>
-								Try It for Free
-							</button>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+              <!-- Step 3 -->
+              <div class="step">
+                <div class="step-number">03</div>
+                <div class="step-card">
+                  <div class="step-icon-wrapper">
+                    <div class="step-icon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                      >
+                        <circle cx="12" cy="12" r="9" />
+                        <path d="M8 12L12 16L16 8" />
+                      </svg>
+                    </div>
+                    <div class="icon-background"></div>
+                  </div>
+                  <h3 class="step-title">Advance</h3>
+                  <p class="step-description">
+                    Students progress confidently with personalized learning
+                    paths that evolve as they grow and achieve their goals.
+                  </p>
+                  <ul class="step-features">
+                    <li>Personalized pathways</li>
+                    <li>Progress tracking</li>
+                    <li>Achievement milestones</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
 
-		<!-- Footer -->
-		<footer
-			class="footer"
-			id="contact"
-			role="contentinfo"
-		>
-			<div class="container">
-				<div class="footer-content">
-					<div class="footer-brand">
-						<div class="footer-logo">
-							<img
-								src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiM0MEUwRDAiLz4KPHBhdGggZD0iTTEyIDE2SDE2VjI0SDEyVjE2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTE4IDEySDIyVjI4SDE4VjEyWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI0IDE2SDI4VjI0SDI0VjE2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+"
-								alt="InnovateTech"
-								class="logo"
-							/>
-							<span>InnovateTech</span>
-						</div>
-						<p>
-							Empowering educators with AI-powered
-							learning solutions.
-						</p>
-					</div>
-					<div class="footer-links">
-						<div class="footer-column">
-							<h4>Product</h4>
-							<a href="#features">Features</a>
-							<a href="#pricing">Pricing</a>
-							<a href="#demo">Demo</a>
-						</div>
-						<div class="footer-column">
-							<h4>Support</h4>
-							<a href="#help">Help Center</a>
-							<a href="#documentation"
-								>Documentation</a
-							>
-							<a href="#contact">Contact Us</a>
-						</div>
-						<div class="footer-column">
-							<h4>Company</h4>
-							<a href="#about">About Us</a>
-							<a href="#careers">Careers</a>
-							<a href="#privacy"
-								>Privacy Policy</a
-							>
-						</div>
-					</div>
-				</div>
-				<div class="footer-bottom">
-					<p>
-						&copy; 2025 InnovateTech. All rights
-						reserved.
-					</p>
-					<button class="btn btn-primary">
-						Join Our Educator Beta Program
-					</button>
-				</div>
-			</div>
-		</footer>
+          <!-- How It Works Stats -->
+          <div class="how-it-works-stats">
+            <div class="stat-box">
+              <div class="stat-icon">⚡</div>
+              <div class="stat-content">
+                <span class="stat-number">3x</span>
+                <span class="stat-text">Faster Learning</span>
+              </div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-icon">📈</div>
+              <div class="stat-content">
+                <span class="stat-number">94%</span>
+                <span class="stat-text">Success Rate</span>
+              </div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-icon">✨</div>
+              <div class="stat-content">
+                <span class="stat-number">15K+</span>
+                <span class="stat-text">Schools Using</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-		<!-- Sticky CTA -->
-		<div
-			class="sticky-cta"
-			id="sticky-cta"
-		>
-			<button class="btn btn-primary btn-sm">
-				Book Demo
-			</button>
-		</div>
+      <!-- Benefits Section -->
+      <section class="benefits" id="features" aria-labelledby="benefits-title">
+        <!-- Decorative Elements -->
+        <div class="benefits-blob benefits-blob-1"></div>
+        <div class="benefits-blob benefits-blob-2"></div>
+        <div class="benefits-glow benefits-glow-1"></div>
 
-		<!-- Demo Modal -->
-		<dialog
-			class="modal"
-			id="demo-modal"
-			aria-labelledby="modal-title"
-		>
-			<div class="modal-content">
-				<button
-					class="close"
-					id="close-modal"
-					aria-label="Close dialog"
-				>
-					&times;
-				</button>
-				<h2 id="modal-title">
-					Book Your Free Demo
-				</h2>
-				<form
-					class="demo-form"
-					id="demo-form"
-					aria-label="Demo booking form"
-				>
-					<div class="form-group">
-						<label for="name">Full Name</label>
-						<input
-							type="text"
-							id="name"
-							name="name"
-							required
-						/>
-					</div>
-					<div class="form-group">
-						<label for="email"
-							>Email Address</label
-						>
-						<input
-							type="email"
-							id="email"
-							name="email"
-							required
-						/>
-					</div>
-					<div class="form-group">
-						<label for="school"
-							>School/Organization</label
-						>
-						<input
-							type="text"
-							id="school"
-							name="school"
-							required
-						/>
-					</div>
-					<div class="form-group">
-						<label for="role">Your Role</label>
-						<select
-							id="role"
-							name="role"
-							required
-						>
-							<option value="">
-								Select your role
-							</option>
-							<option value="teacher">
-								Teacher
-							</option>
-							<option value="principal">
-								Principal
-							</option>
-							<option value="administrator">
-								Administrator
-							</option>
-							<option value="parent">
-								Parent
-							</option>
-							<option value="other">Other</option>
-						</select>
-					</div>
-					<button
-						type="submit"
-						class="btn btn-primary btn-lg"
-					>
-						Schedule Demo
-					</button>
-				</form>
-			</div>
-		</dialog>
+        <div class="container">
+          <!-- Section Header -->
+          <div class="benefits-header">
+            <span class="benefits-badge"> 💡 Tailored Solutions </span>
+            <h2 class="section-title benefits-title" id="benefits-title">
+              Outcomes for <span class="gradient-text">Everyone</span>
+            </h2>
+            <p class="benefits-subtitle">
+              Whether you're a student seeking personalized learning, a teacher
+              needing powerful insights, or a parent tracking
+              progress—InnovateTech adapts to your needs.
+            </p>
+          </div>
 
-		<script src="script.js"></script>
-	</body>
+          <!-- Benefit Cards Grid -->
+          <div class="benefits-cards-grid">
+            <!-- Student Card -->
+            <div class="benefit-card">
+              <div class="benefit-card-top">
+                <div class="benefit-icon-wrapper student-color">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 10v6m0 0a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm0 0V8a6 6 0 0 0-6-6H8a6 6 0 0 0-6 6v8"
+                    ></path>
+                    <circle cx="12" cy="12" r="3"></circle>
+                  </svg>
+                </div>
+                <h3 class="benefit-card-title">For Students</h3>
+              </div>
+
+              <p class="benefit-card-description">
+                Personalized learning experiences that adapt to your pace,
+                keeping you engaged and motivated.
+              </p>
+
+              <ul class="benefit-features">
+                <li>Adaptive learning paths</li>
+                <li>Real-time progress tracking</li>
+                <li>Achievement badges & rewards</li>
+                <li>Customized recommendations</li>
+              </ul>
+
+              <div class="benefit-card-accent"></div>
+            </div>
+
+            <!-- Teacher Card -->
+            <div class="benefit-card">
+              <div class="benefit-card-top">
+                <div class="benefit-icon-wrapper teacher-color">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"
+                    ></path>
+                    <polyline points="10 17 14 13 10 9"></polyline>
+                  </svg>
+                </div>
+                <h3 class="benefit-card-title">For Teachers</h3>
+              </div>
+
+              <p class="benefit-card-description">
+                Powerful insights and analytics to understand each student's
+                progress and customize teaching.
+              </p>
+
+              <ul class="benefit-features">
+                <li>Comprehensive analytics</li>
+                <li>Student progress dashboards</li>
+                <li>Automated grading tools</li>
+                <li>Class performance insights</li>
+              </ul>
+
+              <div class="benefit-card-accent"></div>
+            </div>
+
+            <!-- Parent Card -->
+            <div class="benefit-card">
+              <div class="benefit-card-top">
+                <div class="benefit-icon-wrapper parent-color">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                    <path d="M16 11h6"></path>
+                  </svg>
+                </div>
+                <h3 class="benefit-card-title">For Parents</h3>
+              </div>
+
+              <p class="benefit-card-description">
+                Clear visibility into your child's learning progress with
+                engaging reports showing real growth.
+              </p>
+
+              <ul class="benefit-features">
+                <li>Progress reports</li>
+                <li>Milestone tracking</li>
+                <li>Communication tools</li>
+                <li>Growth insights</li>
+              </ul>
+
+              <div class="benefit-card-accent"></div>
+            </div>
+          </div>
+
+          <!-- Benefits Statistics -->
+          <div class="benefits-stats">
+            <div class="stat-item">
+              <div class="stat-icon">📚</div>
+              <div class="stat-value">500K+</div>
+              <div class="stat-label">Active Learners</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">🎯</div>
+              <div class="stat-value">95%</div>
+              <div class="stat-label">Success Rate</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-icon">⏱️</div>
+              <div class="stat-value">50%</div>
+              <div class="stat-label">Time Saved</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video Demo Section -->
+      <section class="demo" id="demo">
+        <!-- Decorative Elements -->
+        <div class="demo-blob demo-blob-1"></div>
+        <div class="demo-blob demo-blob-2"></div>
+        <div class="demo-glow demo-glow-1"></div>
+
+        <div class="container">
+          <!-- Section Header -->
+          <div class="demo-header">
+            <span class="demo-badge"> 🎬 See It in Action </span>
+            <h2 class="section-title demo-title">
+              Experience <span class="gradient-text">InnovateTech</span> Live
+            </h2>
+            <p class="demo-subtitle">
+              Watch how educators and students transform their learning
+              experience with our intelligent platform in just 60 seconds.
+            </p>
+          </div>
+
+          <!-- Video Preview -->
+          <div class="demo-container">
+            <div class="video-preview">
+              <!-- Decorative Corner Elements -->
+              <div class="video-corner video-corner-tl"></div>
+              <div class="video-corner video-corner-tr"></div>
+              <div class="video-corner video-corner-bl"></div>
+              <div class="video-corner video-corner-br"></div>
+
+              <!-- Video Placeholder -->
+              <div class="video-placeholder">
+                <div class="play-button-wrapper">
+                  <div class="play-button" id="play-demo">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
+                      <circle
+                        cx="30"
+                        cy="30"
+                        r="29"
+                        stroke="#40E0D0"
+                        stroke-width="2"
+                        fill="none"
+                      />
+                      <circle
+                        cx="30"
+                        cy="30"
+                        r="24"
+                        fill="rgba(64, 224, 208, 0.15)"
+                      />
+                      <path d="M25 20L40 30L25 40V20Z" fill="#40E0D0" />
+                    </svg>
+                  </div>
+                  <span class="play-label">Play Demo</span>
+                </div>
+              </div>
+
+              <!-- Feature Pills -->
+              <div class="demo-features">
+                <div class="feature-pill">
+                  <span class="pill-icon">✨</span>
+                  <span class="pill-text">AI-Powered</span>
+                </div>
+                <div class="feature-pill">
+                  <span class="pill-icon">⚡</span>
+                  <span class="pill-text">Real-Time</span>
+                </div>
+                <div class="feature-pill">
+                  <span class="pill-icon">📊</span>
+                  <span class="pill-text">Analytics</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Demo CTA Section -->
+          <div class="demo-cta-section">
+            <div class="demo-info">
+              <h3 class="demo-info-title">
+                Ready to Transform Your Classroom?
+              </h3>
+              <p class="demo-info-text">
+                Get started with a free trial and see the difference
+                InnovateTech can make.
+              </p>
+            </div>
+            <div class="demo-actions">
+              <button class="btn btn-primary demo-btn">Start Free Trial</button>
+              <button class="btn btn-outline demo-btn">Schedule Demo</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials" aria-labelledby="testimonials-title">
+        <!-- Decorative Elements -->
+        <div class="testimonials-blob testimonials-blob-1"></div>
+        <div class="testimonials-blob testimonials-blob-2"></div>
+        <div class="testimonials-glow testimonials-glow-1"></div>
+
+        <div class="container">
+          <!-- Section Header -->
+          <div class="testimonials-header">
+            <span class="testimonials-badge"> ⭐ Success Stories </span>
+            <h2
+              class="section-title testimonials-title"
+              id="testimonials-title"
+            >
+              What Educators and <span class="gradient-text">Learners</span> Say
+            </h2>
+            <p class="testimonials-subtitle">
+              Discover how InnovateTech is transforming education across schools
+              and impacting lives positively.
+            </p>
+          </div>
+
+          <!-- Testimonials Grid -->
+          <div class="testimonials-grid">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-header">
+                  <div class="star-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <div class="quote-mark">"</div>
+                </div>
+
+                <p class="testimonial-text">
+                  InnovateTech has transformed how my students learn. The AI
+                  adapts to each child's needs, and I can see remarkable
+                  improvements in engagement and understanding.
+                </p>
+              </div>
+
+              <div class="testimonial-author-info">
+                <div class="author-avatar teacher-avatar">
+                  <span>👨‍🏫</span>
+                </div>
+                <div class="author-details">
+                  <div class="author-name">Sarah Chen</div>
+                  <div class="author-role">5th Grade Teacher</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-header">
+                  <div class="star-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <div class="quote-mark">"</div>
+                </div>
+
+                <p class="testimonial-text">
+                  The insights provided help me identify learning gaps early and
+                  adjust my teaching methods. It's like having a teaching
+                  assistant that never sleeps.
+                </p>
+              </div>
+
+              <div class="testimonial-author-info">
+                <div class="author-avatar principal-avatar">
+                  <span>👔</span>
+                </div>
+                <div class="author-details">
+                  <div class="author-name">Dr. Michael Rodriguez</div>
+                  <div class="author-role">
+                    Principal, Innovation Middle School
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                <div class="testimonial-header">
+                  <div class="star-rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                  </div>
+                  <div class="quote-mark">"</div>
+                </div>
+
+                <p class="testimonial-text">
+                  My daughter went from struggling with math to actually
+                  enjoying it. The personalized approach made all the difference
+                  in her confidence and performance.
+                </p>
+              </div>
+
+              <div class="testimonial-author-info">
+                <div class="author-avatar parent-avatar">
+                  <span>👩‍👧</span>
+                </div>
+                <div class="author-details">
+                  <div class="author-name">Jennifer Park</div>
+                  <div class="author-role">Parent of 7th Grader</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonials Stats -->
+          <div class="testimonials-stats">
+            <div class="testimonial-stat">
+              <div class="stat-number">10K+</div>
+              <div class="stat-description">Educators Trust Us</div>
+            </div>
+            <div class="testimonial-stat">
+              <div class="stat-number">250K+</div>
+              <div class="stat-description">Students Engaged</div>
+            </div>
+            <div class="testimonial-stat">
+              <div class="stat-number">4.8/5</div>
+              <div class="stat-description">Average Rating</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Schools Section -->
+      <section class="for-schools" id="for-schools">
+        <!-- Decorative Elements -->
+        <div class="schools-blob schools-blob-1"></div>
+        <div class="schools-blob schools-blob-2"></div>
+        <div class="schools-glow schools-glow-1"></div>
+
+        <div class="container">
+          <!-- Section Header -->
+          <div class="schools-header">
+            <span class="schools-badge"> 🏫 For Educational Leaders </span>
+            <h2 class="section-title schools-title">
+              Built for
+              <span class="gradient-text">Educational Excellence</span>
+            </h2>
+            <p class="schools-subtitle">
+              Empower your entire district with enterprise-grade AI technology
+              designed specifically for schools and educational institutions.
+            </p>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="schools-features">
+            <!-- Feature 1 -->
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"
+                  ></path>
+                  <polyline points="10 17 14 13 10 9"></polyline>
+                </svg>
+              </div>
+              <h3 class="feature-title">District-Wide Integration</h3>
+              <p class="feature-description">
+                Seamlessly integrates with your existing LMS and student
+                information systems for unified learning management.
+              </p>
+              <ul class="feature-points">
+                <li>LMS Compatibility</li>
+                <li>SSO Support</li>
+                <li>Data Sync</li>
+              </ul>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <line x1="12" y1="2" x2="12" y2="22"></line>
+                  <path
+                    d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Comprehensive Analytics</h3>
+              <p class="feature-description">
+                Track student progress, identify learning trends, and make
+                data-driven decisions across your entire district.
+              </p>
+              <ul class="feature-points">
+                <li>Real-Time Reports</li>
+                <li>Trend Analysis</li>
+                <li>Performance Insights</li>
+              </ul>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-card">
+              <div class="feature-icon-wrapper">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="feature-title">Professional Development</h3>
+              <p class="feature-description">
+                Ongoing training and support to help educators maximize the
+                potential of AI-powered learning.
+              </p>
+              <ul class="feature-points">
+                <li>Educator Training</li>
+                <li>24/7 Support</li>
+                <li>Resources Library</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Key Benefits Section -->
+          <div class="schools-benefits">
+            <div class="benefit-item">
+              <div class="benefit-number">99.8%</div>
+              <div class="benefit-label">Uptime SLA</div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-number">1000+</div>
+              <div class="benefit-label">Schools Served</div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-number">2M+</div>
+              <div class="benefit-label">Students Supported</div>
+            </div>
+            <div class="benefit-item">
+              <div class="benefit-number">24/7</div>
+              <div class="benefit-label">Dedicated Support</div>
+            </div>
+          </div>
+
+          <!-- CTA Section -->
+          <div class="schools-cta">
+            <h3 class="schools-cta-title">Ready to Transform Your District?</h3>
+            <p class="schools-cta-text">
+              Schedule a personalized demo and discover how InnovateTech can
+              revolutionize learning in your schools.
+            </p>
+            <div class="schools-actions">
+              <button class="btn btn-primary schools-btn">Request Demo</button>
+              <button class="btn btn-outline schools-btn">
+                Download Resources
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="pricing" id="pricing">
+        <!-- Decorative Elements -->
+        <div class="pricing-blob pricing-blob-1"></div>
+        <div class="pricing-blob pricing-blob-2"></div>
+        <div class="pricing-glow pricing-glow-1"></div>
+
+        <div class="container">
+          <!-- Section Header -->
+          <div class="pricing-header">
+            <span class="pricing-badge"> 💳 Flexible Pricing Plans </span>
+            <h2 class="section-title pricing-title">
+              Simple <span class="gradient-text">Transparent Pricing</span>
+            </h2>
+            <p class="pricing-subtitle">
+              Choose the perfect plan for your needs. No hidden fees, cancel
+              anytime.
+            </p>
+          </div>
+
+          <!-- Pricing Cards Grid -->
+          <div class="pricing-grid">
+            <!-- Educator Plan -->
+            <div class="pricing-card">
+              <div class="card-header">
+                <h3 class="plan-name">Educator</h3>
+                <p class="plan-description">Perfect for individual teachers</p>
+              </div>
+
+              <div class="pricing-display">
+                <div class="price-amount">
+                  <span class="currency">$</span>
+                  <span class="amount">29</span>
+                  <span class="period">/month</span>
+                </div>
+                <p class="price-note">Billed monthly</p>
+              </div>
+
+              <ul class="features-list">
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Up to 30 students
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Basic analytics
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Email support
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Core AI features
+                </li>
+              </ul>
+
+              <button class="btn btn-outline plan-btn">Start Free Trial</button>
+            </div>
+
+            <!-- School Plan (Featured) -->
+            <div class="pricing-card featured">
+              <div class="popular-badge">⭐ Most Popular</div>
+
+              <div class="card-header">
+                <h3 class="plan-name">School</h3>
+                <p class="plan-description">Best for schools & districts</p>
+              </div>
+
+              <div class="pricing-display">
+                <div class="price-amount">
+                  <span class="currency">$</span>
+                  <span class="amount">99</span>
+                  <span class="period">/month</span>
+                </div>
+                <p class="price-note">Billed monthly</p>
+              </div>
+
+              <ul class="features-list">
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Up to 500 students
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Advanced analytics
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Priority support
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Full AI suite
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Teacher training
+                </li>
+              </ul>
+
+              <button class="btn btn-primary plan-btn">Book Demo</button>
+            </div>
+
+            <!-- District Plan -->
+            <div class="pricing-card">
+              <div class="card-header">
+                <h3 class="plan-name">District</h3>
+                <p class="plan-description">For enterprise organizations</p>
+              </div>
+
+              <div class="pricing-display">
+                <div class="price-amount custom-price">
+                  <span class="currency-label">Custom</span>
+                </div>
+                <p class="price-note">Contact for details</p>
+              </div>
+
+              <ul class="features-list">
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Unlimited students
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Enterprise analytics
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Dedicated support
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Custom integrations
+                </li>
+                <li>
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  On-site training
+                </li>
+              </ul>
+
+              <button class="btn btn-outline plan-btn">Contact Sales</button>
+            </div>
+          </div>
+
+          <!-- Comparison Table -->
+          <div class="pricing-comparison">
+            <h3 class="comparison-title">Compare All Features</h3>
+            <div class="comparison-table">
+              <div class="comparison-row">
+                <div class="feature-name">Student Limit</div>
+                <div class="feature-value">30</div>
+                <div class="feature-value">500</div>
+                <div class="feature-value">Unlimited</div>
+              </div>
+              <div class="comparison-row">
+                <div class="feature-name">Analytics</div>
+                <div class="feature-value">Basic</div>
+                <div class="feature-value">Advanced</div>
+                <div class="feature-value">Enterprise</div>
+              </div>
+              <div class="comparison-row">
+                <div class="feature-name">Support</div>
+                <div class="feature-value">Email</div>
+                <div class="feature-value">Priority</div>
+                <div class="feature-value">Dedicated 24/7</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="cta-section" id="cta-final" aria-labelledby="cta-title">
+        <!-- Decorative Background Elements -->
+        <div class="cta-decoration">
+          <div class="cta-blob cta-blob-1"></div>
+          <div class="cta-blob cta-blob-2"></div>
+          <div class="cta-glow cta-glow-1"></div>
+          <div class="cta-grid"></div>
+        </div>
+
+        <div class="container">
+          <div class="cta-wrapper">
+            <!-- Main CTA Content -->
+            <div class="cta-content">
+              <div class="cta-badge">
+                <span class="badge-dot"></span>
+                <span class="badge-text">Limited Time Offer</span>
+              </div>
+
+              <h2 id="cta-title" class="cta-title">
+                Transform Your <span class="gradient-text">Classroom</span>
+                <br />in Just <span class="highlight">30 Days</span>
+              </h2>
+
+              <p class="cta-subtitle">
+                Join 10,000+ educators who've already revolutionized their
+                teaching. Get 50% off your first month + exclusive onboarding
+                support.
+              </p>
+
+              <!-- Stats Row -->
+              <div class="cta-stats-row">
+                <div class="cta-stat">
+                  <span class="cta-stat-number">⚡</span>
+                  <span class="cta-stat-text">Free 30-Day Trial</span>
+                </div>
+                <div class="cta-stat">
+                  <span class="cta-stat-number">🎯</span>
+                  <span class="cta-stat-text">No Credit Card Required</span>
+                </div>
+                <div class="cta-stat">
+                  <span class="cta-stat-number">💬</span>
+                  <span class="cta-stat-text">24/7 Support Included</span>
+                </div>
+              </div>
+
+              <!-- Primary Actions -->
+              <div class="cta-actions">
+                <button
+                  class="btn btn-primary btn-lg cta-main-btn"
+                  onclick="openModal()"
+                >
+                  <span class="btn-text">Start Free Trial Now</span>
+                  <span class="btn-arrow">→</span>
+                </button>
+                <button class="btn btn-ghost cta-secondary-btn">
+                  <span class="btn-text">See Pricing Plans</span>
+                  <span class="btn-icon">↓</span>
+                </button>
+              </div>
+
+              <!-- Trust Indicators -->
+              <div class="cta-trust">
+                <span class="trust-text">Trusted by schools worldwide</span>
+                <div class="trust-avatars">
+                  <div class="trust-avatar">👨‍🏫</div>
+                  <div class="trust-avatar">👩‍🏫</div>
+                  <div class="trust-avatar">👨‍💼</div>
+                  <div class="trust-avatar">+5K</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Visual Element -->
+            <div class="cta-visual">
+              <div class="cta-card-container">
+                <div class="cta-visual-card cta-card-1">
+                  <div class="card-header-light">
+                    <span class="icon-badge">📈</span>
+                    <span class="card-label">Performance</span>
+                  </div>
+                  <div class="card-metric">
+                    <span class="metric-value">94%</span>
+                    <span class="metric-label">Success Rate</span>
+                  </div>
+                  <div class="card-bar">
+                    <div class="bar-fill"></div>
+                  </div>
+                </div>
+
+                <div class="cta-visual-card cta-card-2">
+                  <div class="card-header-light">
+                    <span class="icon-badge">⚡</span>
+                    <span class="card-label">Efficiency</span>
+                  </div>
+                  <div class="card-metric">
+                    <span class="metric-value">3x</span>
+                    <span class="metric-label">Faster Results</span>
+                  </div>
+                  <div class="card-bar">
+                    <div class="bar-fill bar-fill-2"></div>
+                  </div>
+                </div>
+
+                <div class="cta-visual-card cta-card-3">
+                  <div class="card-header-light">
+                    <span class="icon-badge">✨</span>
+                    <span class="card-label">Engagement</span>
+                  </div>
+                  <div class="card-metric">
+                    <span class="metric-value">+500K</span>
+                    <span class="metric-label">Active Users</span>
+                  </div>
+                  <div class="card-bar">
+                    <div class="bar-fill bar-fill-3"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floating Elements -->
+              <div class="floating-element element-1">
+                <div class="pulse-ring"></div>
+              </div>
+              <div class="floating-element element-2">
+                <div class="pulse-ring"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom CTA Support Text -->
+          <div class="cta-footer-note">
+            <span class="icon">ℹ️</span>
+            <span class="text"
+              >Money-back guarantee if you're not satisfied within 14 days. No
+              questions asked.</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact" role="contentinfo">
+      <!-- Decorative Background Elements -->
+      <div class="footer-decoration">
+        <div class="footer-blob footer-blob-1"></div>
+        <div class="footer-blob footer-blob-2"></div>
+        <div class="footer-glow footer-glow-1"></div>
+        <div class="footer-grid"></div>
+      </div>
+
+      <div class="container">
+        <!-- Top Section: Main Content -->
+        <div class="footer-top">
+          <!-- Brand & CTA Column -->
+          <div class="footer-section footer-brand-section">
+            <div class="footer-logo-wrapper">
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiM0MEUwRDAiLz4KPHBhdGggZD0iTTEyIDE2SDE2VjI0SDEyVjE2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTE4IDEySDIyVjI4SDE4VjEyWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI0IDE2SDI4VjI0SDI0VjE2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+"
+                alt="InnovateTech"
+                class="footer-logo"
+              />
+              <span class="footer-brand-name">InnovateTech</span>
+            </div>
+            <p class="footer-brand-description">
+              Empowering educators worldwide with AI-powered learning solutions
+              that transform classrooms and unlock student potential.
+            </p>
+
+            <!-- Social Links -->
+            <div class="footer-social">
+              <a href="#" class="social-link" aria-label="Twitter">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                  />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Newsletter Signup -->
+            <div class="footer-newsletter">
+              <h4 class="newsletter-title">Stay Updated</h4>
+              <form
+                class="newsletter-form"
+                onsubmit="handleNewsletterSignup(event)"
+              >
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="newsletter-input"
+                  required
+                />
+                <button type="submit" class="newsletter-submit">
+                  <span class="submit-icon">→</span>
+                </button>
+              </form>
+              <p class="newsletter-note">
+                Get updates on new features and best practices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Navigation Columns -->
+          <div class="footer-links-grid">
+            <!-- Product Column -->
+            <div class="footer-column">
+              <h4 class="column-title">Product</h4>
+              <nav class="column-links">
+                <a href="#features" class="column-link">Features</a>
+                <a href="#pricing" class="column-link">Pricing</a>
+                <a href="#demo" class="column-link">Demo</a>
+                <a href="#updates" class="column-link">What's New</a>
+                <a href="#roadmap" class="column-link">Roadmap</a>
+              </nav>
+            </div>
+
+            <!-- Company Column -->
+            <div class="footer-column">
+              <h4 class="column-title">Company</h4>
+              <nav class="column-links">
+                <a href="#about" class="column-link">About Us</a>
+                <a href="#blog" class="column-link">Blog</a>
+                <a href="#careers" class="column-link">Careers</a>
+                <a href="#press" class="column-link">Press Kit</a>
+                <a href="#partners" class="column-link">Partners</a>
+              </nav>
+            </div>
+
+            <!-- Support Column -->
+            <div class="footer-column">
+              <h4 class="column-title">Support</h4>
+              <nav class="column-links">
+                <a href="#help" class="column-link">Help Center</a>
+                <a href="#documentation" class="column-link">Documentation</a>
+                <a href="#contact-support" class="column-link"
+                  >Contact Support</a
+                >
+                <a href="#status" class="column-link">System Status</a>
+                <a href="#faq" class="column-link">FAQ</a>
+              </nav>
+            </div>
+
+            <!-- Legal Column -->
+            <div class="footer-column">
+              <h4 class="column-title">Legal</h4>
+              <nav class="column-links">
+                <a href="#terms" class="column-link">Terms of Service</a>
+                <a href="#privacy" class="column-link">Privacy Policy</a>
+                <a href="#cookies" class="column-link">Cookie Policy</a>
+                <a href="#security" class="column-link">Security</a>
+                <a href="#compliance" class="column-link">Compliance</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Bottom Section: Credits & CTA -->
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <p class="copyright">
+              &copy; 2025 InnovateTech. All rights reserved.
+            </p>
+            <div class="footer-status">
+              <span class="status-badge">✓ All Systems Operational</span>
+            </div>
+          </div>
+
+          <div class="footer-bottom-center">
+            <div class="footer-features">
+              <span class="feature-badge">🛡️ SOC 2 Certified</span>
+              <span class="feature-badge">🔒 GDPR Compliant</span>
+              <span class="feature-badge">⚡ 99.8% Uptime</span>
+            </div>
+          </div>
+
+          <div class="footer-bottom-right">
+            <button
+              class="btn btn-primary btn-sm footer-cta"
+              onclick="openModal()"
+            >
+              Start Free Trial
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Sticky CTA -->
+    <div class="sticky-cta" id="sticky-cta">
+      <button class="btn btn-primary btn-sm">Book Demo</button>
+    </div>
+
+    <!-- Demo Modal -->
+    <dialog class="modal" id="demo-modal" aria-labelledby="modal-title">
+      <div class="modal-content">
+        <button class="close" id="close-modal" aria-label="Close dialog">
+          &times;
+        </button>
+        <h2 id="modal-title">Book Your Free Demo</h2>
+        <form class="demo-form" id="demo-form" aria-label="Demo booking form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="school">School/Organization</label>
+            <input type="text" id="school" name="school" required />
+          </div>
+          <div class="form-group">
+            <label for="role">Your Role</label>
+            <select id="role" name="role" required>
+              <option value="">Select your role</option>
+              <option value="teacher">Teacher</option>
+              <option value="principal">Principal</option>
+              <option value="administrator">Administrator</option>
+              <option value="parent">Parent</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg">
+            Schedule Demo
+          </button>
+        </form>
+      </div>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
 </html>
