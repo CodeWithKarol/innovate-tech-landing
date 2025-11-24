@@ -1,1466 +1,4062 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
-    />
-    <meta name="theme-color" content="#40E0D0" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-    <title>InnovateTech - AI-Powered Learning Platform</title>
-    <meta
-      name="description"
-      content="Unlock every student's potential with AI-powered learning. Personalized, adaptive learning experiences that evolve with every learner."
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navigation -->
-    <header role="banner">
-      <nav
-        class="navbar"
-        id="navbar"
-        role="navigation"
-        aria-label="Main navigation"
-      >
-        <div class="nav-container">
-          <div class="nav-brand">
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik0xMiAxNkgxNlYyNEgxMlYxNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xOCAxMkgyMlYyOEgxOFYxMloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNCAxNkgyOFYyNEgyNFYxNloiIGZpbGw9IndoaXRlIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MF9saW5lYXJfMV8xIiB4MT0iMCIgeTE9IjAiIHgyPSI0MCIgeTI9IjQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM0MEUwRDAiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjZCNEFBIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+"
-              alt="InnovateTech Logo"
-              class="logo"
-            />
-            <span>InnovateTech</span>
-          </div>
-          <div class="nav-menu" id="nav-menu">
-            <a href="#features" class="nav-link">Features</a>
-            <a href="#how-it-works" class="nav-link">How It Works</a>
-            <a href="#for-schools" class="nav-link">For Schools</a>
-            <a href="#pricing" class="nav-link">Pricing</a>
-            <a href="#contact" class="nav-link">Contact</a>
-            <button class="btn btn-primary nav-cta">Book Demo</button>
-          </div>
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <main>
-      <section class="hero" id="hero" aria-labelledby="hero-title">
-        <!-- Decorative background elements -->
-        <div class="hero-decoration">
-          <div class="decoration-blob blob-1"></div>
-          <div class="decoration-blob blob-2"></div>
-          <div class="decoration-blob blob-3"></div>
-          <div class="decoration-glow glow-1"></div>
-          <div class="decoration-glow glow-2"></div>
-        </div>
-
-        <div class="hero-container">
-          <div class="hero-content">
-            <div class="hero-badge">
-              <span class="badge-icon">✨</span>
-              <span class="badge-text">AI-Powered Learning Platform</span>
-            </div>
-            <h1 class="hero-title" id="hero-title">
-              <span class="title-line">Unlock Every</span>
-              <span class="title-line"
-                >Student's <span class="gradient-text">Potential</span></span
-              >
-              <span class="title-line"
-                >with Advanced
-                <span class="gradient-text">AI Learning</span></span
-              >
-            </h1>
-            <p class="hero-subtitle">
-              Transform education with personalized, adaptive learning
-              experiences. InnovateTech powers educators to unlock student
-              potential at scale.
-            </p>
-            <div class="hero-cta">
-              <button class="btn btn-primary btn-lg" id="primary-cta">
-                <span class="btn-icon">→</span>
-                Book a Free Demo
-              </button>
-              <button class="btn btn-secondary btn-lg">
-                <span class="btn-icon">▶</span>
-                Watch Demo
-              </button>
-            </div>
-            <div class="hero-stats">
-              <div class="stat">
-                <span class="stat-number">10K+</span>
-                <span class="stat-label">Educators</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">500K+</span>
-                <span class="stat-label">Students</span>
-              </div>
-              <div class="stat">
-                <span class="stat-number">99.8%</span>
-                <span class="stat-label">Uptime</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Hero Visual - Modern Card -->
-          <div class="hero-visual">
-            <div class="hero-card">
-              <div class="card-glow"></div>
-              <div class="card-content">
-                <div class="card-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <path
-                      d="M12 2L15 8H22L17 12L19 18L12 14L5 18L7 12L2 8H9L12 2Z"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </div>
-                <h3 class="card-title">AI-Powered Insights</h3>
-                <p class="card-description">
-                  Real-time analytics and personalized learning paths
-                </p>
-                <div class="card-features">
-                  <span class="feature-badge">Advanced Analytics</span>
-                  <span class="feature-badge">Adaptive Learning</span>
-                  <span class="feature-badge">Real-Time Feedback</span>
-                </div>
-              </div>
-            </div>
-            <div class="hero-card card-secondary">
-              <div class="card-glow"></div>
-              <div class="card-content">
-                <div class="card-icon">
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                    <circle cx="12" cy="12" r="10" />
-                    <path
-                      d="M12 6V12L16 14"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    />
-                  </svg>
-                </div>
-                <h3 class="card-title">24/7 Support</h3>
-                <p class="card-description">
-                  Always available to help educators succeed
-                </p>
-                <div class="card-stats">
-                  <div class="stat-mini">
-                    <span class="stat-mini-number">99.8%</span>
-                    <span class="stat-mini-label">Uptime</span>
-                  </div>
-                  <div class="stat-mini">
-                    <span class="stat-mini-number">2m</span>
-                    <span class="stat-mini-label">Response</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- How It Works Section -->
-      <section
-        class="how-it-works"
-        id="how-it-works"
-        aria-labelledby="how-title"
-      >
-        <div class="container">
-          <div class="section-header">
-            <h2 class="section-title" id="how-title">
-              <span class="title-gradient">Intelligent Learning</span> in Three
-              Steps
-            </h2>
-            <p class="section-subtitle">
-              Our AI-powered platform adapts in real-time to each learner's
-              needs
-            </p>
-          </div>
-
-          <div class="steps-container">
-            <!-- Step Connector Line -->
-            <div class="steps-connector"></div>
-
-            <div class="steps-grid">
-              <!-- Step 1 -->
-              <div class="step">
-                <div class="step-number">01</div>
-                <div class="step-card">
-                  <div class="step-icon-wrapper">
-                    <div class="step-icon">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                      >
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M9 12L11 14L15 10" />
-                      </svg>
-                    </div>
-                    <div class="icon-background"></div>
-                  </div>
-                  <h3 class="step-title">Assess</h3>
-                  <p class="step-description">
-                    AI analyzes each student's learning patterns, strengths, and
-                    areas for improvement in real-time with unprecedented
-                    accuracy.
-                  </p>
-                  <ul class="step-features">
-                    <li>Real-time analytics</li>
-                    <li>Learning pattern detection</li>
-                    <li>Performance insights</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Step 2 -->
-              <div class="step">
-                <div class="step-number">02</div>
-                <div class="step-card">
-                  <div class="step-icon-wrapper">
-                    <div class="step-icon">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                      >
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M12 7V12L15 15" />
-                        <path d="M9 9C7.9 8 5.5 7 4 9" />
-                      </svg>
-                    </div>
-                    <div class="icon-background"></div>
-                  </div>
-                  <h3 class="step-title">Adapt</h3>
-                  <p class="step-description">
-                    Content and teaching methods automatically adjust to match
-                    each learner's unique needs, pace, and learning style.
-                  </p>
-                  <ul class="step-features">
-                    <li>Dynamic content adjustment</li>
-                    <li>Personalized pace</li>
-                    <li>Learning style matching</li>
-                  </ul>
-                </div>
-              </div>
-
-              <!-- Step 3 -->
-              <div class="step">
-                <div class="step-number">03</div>
-                <div class="step-card">
-                  <div class="step-icon-wrapper">
-                    <div class="step-icon">
-                      <svg
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.5"
-                      >
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M8 12L12 16L16 8" />
-                      </svg>
-                    </div>
-                    <div class="icon-background"></div>
-                  </div>
-                  <h3 class="step-title">Advance</h3>
-                  <p class="step-description">
-                    Students progress confidently with personalized learning
-                    paths that evolve as they grow and achieve their goals.
-                  </p>
-                  <ul class="step-features">
-                    <li>Personalized pathways</li>
-                    <li>Progress tracking</li>
-                    <li>Achievement milestones</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- How It Works Stats -->
-          <div class="how-it-works-stats">
-            <div class="stat-box">
-              <div class="stat-icon">⚡</div>
-              <div class="stat-content">
-                <span class="stat-number">3x</span>
-                <span class="stat-text">Faster Learning</span>
-              </div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-icon">📈</div>
-              <div class="stat-content">
-                <span class="stat-number">94%</span>
-                <span class="stat-text">Success Rate</span>
-              </div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-icon">✨</div>
-              <div class="stat-content">
-                <span class="stat-number">15K+</span>
-                <span class="stat-text">Schools Using</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Benefits Section -->
-      <section class="benefits" id="features" aria-labelledby="benefits-title">
-        <!-- Decorative Elements -->
-        <div class="benefits-blob benefits-blob-1"></div>
-        <div class="benefits-blob benefits-blob-2"></div>
-        <div class="benefits-glow benefits-glow-1"></div>
-
-        <div class="container">
-          <!-- Section Header -->
-          <div class="benefits-header">
-            <span class="benefits-badge"> 💡 Tailored Solutions </span>
-            <h2 class="section-title benefits-title" id="benefits-title">
-              Outcomes for <span class="gradient-text">Everyone</span>
-            </h2>
-            <p class="benefits-subtitle">
-              Whether you're a student seeking personalized learning, a teacher
-              needing powerful insights, or a parent tracking
-              progress—InnovateTech adapts to your needs.
-            </p>
-          </div>
-
-          <!-- Benefit Cards Grid -->
-          <div class="benefits-cards-grid">
-            <!-- Student Card -->
-            <div class="benefit-card">
-              <div class="benefit-card-top">
-                <div class="benefit-icon-wrapper student-color">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M22 10v6m0 0a10 10 0 1 1-20 0 10 10 0 0 1 20 0zm0 0V8a6 6 0 0 0-6-6H8a6 6 0 0 0-6 6v8"
-                    ></path>
-                    <circle cx="12" cy="12" r="3"></circle>
-                  </svg>
-                </div>
-                <h3 class="benefit-card-title">For Students</h3>
-              </div>
-
-              <p class="benefit-card-description">
-                Personalized learning experiences that adapt to your pace,
-                keeping you engaged and motivated.
-              </p>
-
-              <ul class="benefit-features">
-                <li>Adaptive learning paths</li>
-                <li>Real-time progress tracking</li>
-                <li>Achievement badges & rewards</li>
-                <li>Customized recommendations</li>
-              </ul>
-
-              <div class="benefit-card-accent"></div>
-            </div>
-
-            <!-- Teacher Card -->
-            <div class="benefit-card">
-              <div class="benefit-card-top">
-                <div class="benefit-icon-wrapper teacher-color">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path
-                      d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"
-                    ></path>
-                    <polyline points="10 17 14 13 10 9"></polyline>
-                  </svg>
-                </div>
-                <h3 class="benefit-card-title">For Teachers</h3>
-              </div>
-
-              <p class="benefit-card-description">
-                Powerful insights and analytics to understand each student's
-                progress and customize teaching.
-              </p>
-
-              <ul class="benefit-features">
-                <li>Comprehensive analytics</li>
-                <li>Student progress dashboards</li>
-                <li>Automated grading tools</li>
-                <li>Class performance insights</li>
-              </ul>
-
-              <div class="benefit-card-accent"></div>
-            </div>
-
-            <!-- Parent Card -->
-            <div class="benefit-card">
-              <div class="benefit-card-top">
-                <div class="benefit-icon-wrapper parent-color">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                    <circle cx="12" cy="7" r="4"></circle>
-                    <path d="M16 11h6"></path>
-                  </svg>
-                </div>
-                <h3 class="benefit-card-title">For Parents</h3>
-              </div>
-
-              <p class="benefit-card-description">
-                Clear visibility into your child's learning progress with
-                engaging reports showing real growth.
-              </p>
-
-              <ul class="benefit-features">
-                <li>Progress reports</li>
-                <li>Milestone tracking</li>
-                <li>Communication tools</li>
-                <li>Growth insights</li>
-              </ul>
-
-              <div class="benefit-card-accent"></div>
-            </div>
-          </div>
-
-          <!-- Benefits Statistics -->
-          <div class="benefits-stats">
-            <div class="stat-item">
-              <div class="stat-icon">📚</div>
-              <div class="stat-value">500K+</div>
-              <div class="stat-label">Active Learners</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-icon">🎯</div>
-              <div class="stat-value">95%</div>
-              <div class="stat-label">Success Rate</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-icon">⏱️</div>
-              <div class="stat-value">50%</div>
-              <div class="stat-label">Time Saved</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Video Demo Section -->
-      <section class="demo" id="demo">
-        <!-- Decorative Elements -->
-        <div class="demo-blob demo-blob-1"></div>
-        <div class="demo-blob demo-blob-2"></div>
-        <div class="demo-glow demo-glow-1"></div>
-
-        <div class="container">
-          <!-- Section Header -->
-          <div class="demo-header">
-            <span class="demo-badge"> 🎬 See It in Action </span>
-            <h2 class="section-title demo-title">
-              Experience <span class="gradient-text">InnovateTech</span> Live
-            </h2>
-            <p class="demo-subtitle">
-              Watch how educators and students transform their learning
-              experience with our intelligent platform in just 60 seconds.
-            </p>
-          </div>
-
-          <!-- Video Preview -->
-          <div class="demo-container">
-            <div class="video-preview">
-              <!-- Decorative Corner Elements -->
-              <div class="video-corner video-corner-tl"></div>
-              <div class="video-corner video-corner-tr"></div>
-              <div class="video-corner video-corner-bl"></div>
-              <div class="video-corner video-corner-br"></div>
-
-              <!-- Video Placeholder -->
-              <div class="video-placeholder">
-                <div class="play-button-wrapper">
-                  <div class="play-button" id="play-demo">
-                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none">
-                      <circle
-                        cx="30"
-                        cy="30"
-                        r="29"
-                        stroke="#40E0D0"
-                        stroke-width="2"
-                        fill="none"
-                      />
-                      <circle
-                        cx="30"
-                        cy="30"
-                        r="24"
-                        fill="rgba(64, 224, 208, 0.15)"
-                      />
-                      <path d="M25 20L40 30L25 40V20Z" fill="#40E0D0" />
-                    </svg>
-                  </div>
-                  <span class="play-label">Play Demo</span>
-                </div>
-              </div>
-
-              <!-- Feature Pills -->
-              <div class="demo-features">
-                <div class="feature-pill">
-                  <span class="pill-icon">✨</span>
-                  <span class="pill-text">AI-Powered</span>
-                </div>
-                <div class="feature-pill">
-                  <span class="pill-icon">⚡</span>
-                  <span class="pill-text">Real-Time</span>
-                </div>
-                <div class="feature-pill">
-                  <span class="pill-icon">📊</span>
-                  <span class="pill-text">Analytics</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Demo CTA Section -->
-          <div class="demo-cta-section">
-            <div class="demo-info">
-              <h3 class="demo-info-title">
-                Ready to Transform Your Classroom?
-              </h3>
-              <p class="demo-info-text">
-                Get started with a free trial and see the difference
-                InnovateTech can make.
-              </p>
-            </div>
-            <div class="demo-actions">
-              <button class="btn btn-primary demo-btn">Start Free Trial</button>
-              <button class="btn btn-outline demo-btn">Schedule Demo</button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials Section -->
-      <section class="testimonials" aria-labelledby="testimonials-title">
-        <!-- Decorative Elements -->
-        <div class="testimonials-blob testimonials-blob-1"></div>
-        <div class="testimonials-blob testimonials-blob-2"></div>
-        <div class="testimonials-glow testimonials-glow-1"></div>
-
-        <div class="container">
-          <!-- Section Header -->
-          <div class="testimonials-header">
-            <span class="testimonials-badge"> ⭐ Success Stories </span>
-            <h2
-              class="section-title testimonials-title"
-              id="testimonials-title"
-            >
-              What Educators and <span class="gradient-text">Learners</span> Say
-            </h2>
-            <p class="testimonials-subtitle">
-              Discover how InnovateTech is transforming education across schools
-              and impacting lives positively.
-            </p>
-          </div>
-
-          <!-- Testimonials Grid -->
-          <div class="testimonials-grid">
-            <!-- Testimonial 1 -->
-            <div class="testimonial-card">
-              <div class="testimonial-content">
-                <div class="testimonial-header">
-                  <div class="star-rating">
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                  </div>
-                  <div class="quote-mark">"</div>
-                </div>
-
-                <p class="testimonial-text">
-                  InnovateTech has transformed how my students learn. The AI
-                  adapts to each child's needs, and I can see remarkable
-                  improvements in engagement and understanding.
-                </p>
-              </div>
-
-              <div class="testimonial-author-info">
-                <div class="author-avatar teacher-avatar">
-                  <span>👨‍🏫</span>
-                </div>
-                <div class="author-details">
-                  <div class="author-name">Sarah Chen</div>
-                  <div class="author-role">5th Grade Teacher</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 2 -->
-            <div class="testimonial-card">
-              <div class="testimonial-content">
-                <div class="testimonial-header">
-                  <div class="star-rating">
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                  </div>
-                  <div class="quote-mark">"</div>
-                </div>
-
-                <p class="testimonial-text">
-                  The insights provided help me identify learning gaps early and
-                  adjust my teaching methods. It's like having a teaching
-                  assistant that never sleeps.
-                </p>
-              </div>
-
-              <div class="testimonial-author-info">
-                <div class="author-avatar principal-avatar">
-                  <span>👔</span>
-                </div>
-                <div class="author-details">
-                  <div class="author-name">Dr. Michael Rodriguez</div>
-                  <div class="author-role">
-                    Principal, Innovation Middle School
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Testimonial 3 -->
-            <div class="testimonial-card">
-              <div class="testimonial-content">
-                <div class="testimonial-header">
-                  <div class="star-rating">
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                  </div>
-                  <div class="quote-mark">"</div>
-                </div>
-
-                <p class="testimonial-text">
-                  My daughter went from struggling with math to actually
-                  enjoying it. The personalized approach made all the difference
-                  in her confidence and performance.
-                </p>
-              </div>
-
-              <div class="testimonial-author-info">
-                <div class="author-avatar parent-avatar">
-                  <span>👩‍👧</span>
-                </div>
-                <div class="author-details">
-                  <div class="author-name">Jennifer Park</div>
-                  <div class="author-role">Parent of 7th Grader</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Testimonials Stats -->
-          <div class="testimonials-stats">
-            <div class="testimonial-stat">
-              <div class="stat-number">10K+</div>
-              <div class="stat-description">Educators Trust Us</div>
-            </div>
-            <div class="testimonial-stat">
-              <div class="stat-number">250K+</div>
-              <div class="stat-description">Students Engaged</div>
-            </div>
-            <div class="testimonial-stat">
-              <div class="stat-number">4.8/5</div>
-              <div class="stat-description">Average Rating</div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Schools Section -->
-      <section class="for-schools" id="for-schools">
-        <!-- Decorative Elements -->
-        <div class="schools-blob schools-blob-1"></div>
-        <div class="schools-blob schools-blob-2"></div>
-        <div class="schools-glow schools-glow-1"></div>
-
-        <div class="container">
-          <!-- Section Header -->
-          <div class="schools-header">
-            <span class="schools-badge"> 🏫 For Educational Leaders </span>
-            <h2 class="section-title schools-title">
-              Built for
-              <span class="gradient-text">Educational Excellence</span>
-            </h2>
-            <p class="schools-subtitle">
-              Empower your entire district with enterprise-grade AI technology
-              designed specifically for schools and educational institutions.
-            </p>
-          </div>
-
-          <!-- Features Grid -->
-          <div class="schools-features">
-            <!-- Feature 1 -->
-            <div class="feature-card">
-              <div class="feature-icon-wrapper">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5z"
-                  ></path>
-                  <polyline points="10 17 14 13 10 9"></polyline>
-                </svg>
-              </div>
-              <h3 class="feature-title">District-Wide Integration</h3>
-              <p class="feature-description">
-                Seamlessly integrates with your existing LMS and student
-                information systems for unified learning management.
-              </p>
-              <ul class="feature-points">
-                <li>LMS Compatibility</li>
-                <li>SSO Support</li>
-                <li>Data Sync</li>
-              </ul>
-            </div>
-
-            <!-- Feature 2 -->
-            <div class="feature-card">
-              <div class="feature-icon-wrapper">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <line x1="12" y1="2" x2="12" y2="22"></line>
-                  <path
-                    d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"
-                  ></path>
-                </svg>
-              </div>
-              <h3 class="feature-title">Comprehensive Analytics</h3>
-              <p class="feature-description">
-                Track student progress, identify learning trends, and make
-                data-driven decisions across your entire district.
-              </p>
-              <ul class="feature-points">
-                <li>Real-Time Reports</li>
-                <li>Trend Analysis</li>
-                <li>Performance Insights</li>
-              </ul>
-            </div>
-
-            <!-- Feature 3 -->
-            <div class="feature-card">
-              <div class="feature-icon-wrapper">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
-                  ></path>
-                </svg>
-              </div>
-              <h3 class="feature-title">Professional Development</h3>
-              <p class="feature-description">
-                Ongoing training and support to help educators maximize the
-                potential of AI-powered learning.
-              </p>
-              <ul class="feature-points">
-                <li>Educator Training</li>
-                <li>24/7 Support</li>
-                <li>Resources Library</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Key Benefits Section -->
-          <div class="schools-benefits">
-            <div class="benefit-item">
-              <div class="benefit-number">99.8%</div>
-              <div class="benefit-label">Uptime SLA</div>
-            </div>
-            <div class="benefit-item">
-              <div class="benefit-number">1000+</div>
-              <div class="benefit-label">Schools Served</div>
-            </div>
-            <div class="benefit-item">
-              <div class="benefit-number">2M+</div>
-              <div class="benefit-label">Students Supported</div>
-            </div>
-            <div class="benefit-item">
-              <div class="benefit-number">24/7</div>
-              <div class="benefit-label">Dedicated Support</div>
-            </div>
-          </div>
-
-          <!-- CTA Section -->
-          <div class="schools-cta">
-            <h3 class="schools-cta-title">Ready to Transform Your District?</h3>
-            <p class="schools-cta-text">
-              Schedule a personalized demo and discover how InnovateTech can
-              revolutionize learning in your schools.
-            </p>
-            <div class="schools-actions">
-              <button class="btn btn-primary schools-btn">Request Demo</button>
-              <button class="btn btn-outline schools-btn">
-                Download Resources
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Pricing Section -->
-      <section class="pricing" id="pricing">
-        <!-- Decorative Elements -->
-        <div class="pricing-blob pricing-blob-1"></div>
-        <div class="pricing-blob pricing-blob-2"></div>
-        <div class="pricing-glow pricing-glow-1"></div>
-
-        <div class="container">
-          <!-- Section Header -->
-          <div class="pricing-header">
-            <span class="pricing-badge"> 💳 Flexible Pricing Plans </span>
-            <h2 class="section-title pricing-title">
-              Simple <span class="gradient-text">Transparent Pricing</span>
-            </h2>
-            <p class="pricing-subtitle">
-              Choose the perfect plan for your needs. No hidden fees, cancel
-              anytime.
-            </p>
-          </div>
-
-          <!-- Pricing Cards Grid -->
-          <div class="pricing-grid">
-            <!-- Educator Plan -->
-            <div class="pricing-card">
-              <div class="card-header">
-                <h3 class="plan-name">Educator</h3>
-                <p class="plan-description">Perfect for individual teachers</p>
-              </div>
-
-              <div class="pricing-display">
-                <div class="price-amount">
-                  <span class="currency">$</span>
-                  <span class="amount">29</span>
-                  <span class="period">/month</span>
-                </div>
-                <p class="price-note">Billed monthly</p>
-              </div>
-
-              <ul class="features-list">
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Up to 30 students
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Basic analytics
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Email support
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Core AI features
-                </li>
-              </ul>
-
-              <button class="btn btn-outline plan-btn">Start Free Trial</button>
-            </div>
-
-            <!-- School Plan (Featured) -->
-            <div class="pricing-card featured">
-              <div class="popular-badge">⭐ Most Popular</div>
-
-              <div class="card-header">
-                <h3 class="plan-name">School</h3>
-                <p class="plan-description">Best for schools & districts</p>
-              </div>
-
-              <div class="pricing-display">
-                <div class="price-amount">
-                  <span class="currency">$</span>
-                  <span class="amount">99</span>
-                  <span class="period">/month</span>
-                </div>
-                <p class="price-note">Billed monthly</p>
-              </div>
-
-              <ul class="features-list">
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Up to 500 students
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Advanced analytics
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Priority support
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Full AI suite
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Teacher training
-                </li>
-              </ul>
-
-              <button class="btn btn-primary plan-btn">Book Demo</button>
-            </div>
-
-            <!-- District Plan -->
-            <div class="pricing-card">
-              <div class="card-header">
-                <h3 class="plan-name">District</h3>
-                <p class="plan-description">For enterprise organizations</p>
-              </div>
-
-              <div class="pricing-display">
-                <div class="price-amount custom-price">
-                  <span class="currency-label">Custom</span>
-                </div>
-                <p class="price-note">Contact for details</p>
-              </div>
-
-              <ul class="features-list">
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Unlimited students
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Enterprise analytics
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Dedicated support
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  Custom integrations
-                </li>
-                <li>
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="20 6 9 17 4 12"></polyline>
-                  </svg>
-                  On-site training
-                </li>
-              </ul>
-
-              <button class="btn btn-outline plan-btn">Contact Sales</button>
-            </div>
-          </div>
-
-          <!-- Comparison Table -->
-          <div class="pricing-comparison">
-            <h3 class="comparison-title">Compare All Features</h3>
-            <div class="comparison-table">
-              <div class="comparison-row">
-                <div class="feature-name">Student Limit</div>
-                <div class="feature-value">30</div>
-                <div class="feature-value">500</div>
-                <div class="feature-value">Unlimited</div>
-              </div>
-              <div class="comparison-row">
-                <div class="feature-name">Analytics</div>
-                <div class="feature-value">Basic</div>
-                <div class="feature-value">Advanced</div>
-                <div class="feature-value">Enterprise</div>
-              </div>
-              <div class="comparison-row">
-                <div class="feature-name">Support</div>
-                <div class="feature-value">Email</div>
-                <div class="feature-value">Priority</div>
-                <div class="feature-value">Dedicated 24/7</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA Section -->
-      <section class="cta-section" id="cta-final" aria-labelledby="cta-title">
-        <!-- Decorative Background Elements -->
-        <div class="cta-decoration">
-          <div class="cta-blob cta-blob-1"></div>
-          <div class="cta-blob cta-blob-2"></div>
-          <div class="cta-glow cta-glow-1"></div>
-          <div class="cta-grid"></div>
-        </div>
-
-        <div class="container">
-          <div class="cta-wrapper">
-            <!-- Main CTA Content -->
-            <div class="cta-content">
-              <div class="cta-badge">
-                <span class="badge-dot"></span>
-                <span class="badge-text">Limited Time Offer</span>
-              </div>
-
-              <h2 id="cta-title" class="cta-title">
-                Transform Your <span class="gradient-text">Classroom</span>
-                <br />in Just <span class="highlight">30 Days</span>
-              </h2>
-
-              <p class="cta-subtitle">
-                Join 10,000+ educators who've already revolutionized their
-                teaching. Get 50% off your first month + exclusive onboarding
-                support.
-              </p>
-
-              <!-- Stats Row -->
-              <div class="cta-stats-row">
-                <div class="cta-stat">
-                  <span class="cta-stat-number">⚡</span>
-                  <span class="cta-stat-text">Free 30-Day Trial</span>
-                </div>
-                <div class="cta-stat">
-                  <span class="cta-stat-number">🎯</span>
-                  <span class="cta-stat-text">No Credit Card Required</span>
-                </div>
-                <div class="cta-stat">
-                  <span class="cta-stat-number">💬</span>
-                  <span class="cta-stat-text">24/7 Support Included</span>
-                </div>
-              </div>
-
-              <!-- Primary Actions -->
-              <div class="cta-actions">
-                <button
-                  class="btn btn-primary btn-lg cta-main-btn"
-                  onclick="openModal()"
-                >
-                  <span class="btn-text">Start Free Trial Now</span>
-                  <span class="btn-arrow">→</span>
-                </button>
-                <button class="btn btn-ghost cta-secondary-btn">
-                  <span class="btn-text">See Pricing Plans</span>
-                  <span class="btn-icon">↓</span>
-                </button>
-              </div>
-
-              <!-- Trust Indicators -->
-              <div class="cta-trust">
-                <span class="trust-text">Trusted by schools worldwide</span>
-                <div class="trust-avatars">
-                  <div class="trust-avatar">👨‍🏫</div>
-                  <div class="trust-avatar">👩‍🏫</div>
-                  <div class="trust-avatar">👨‍💼</div>
-                  <div class="trust-avatar">+5K</div>
-                </div>
-              </div>
-            </div>
-
-            <!-- CTA Visual Element -->
-            <div class="cta-visual">
-              <div class="cta-card-container">
-                <div class="cta-visual-card cta-card-1">
-                  <div class="card-header-light">
-                    <span class="icon-badge">📈</span>
-                    <span class="card-label">Performance</span>
-                  </div>
-                  <div class="card-metric">
-                    <span class="metric-value">94%</span>
-                    <span class="metric-label">Success Rate</span>
-                  </div>
-                  <div class="card-bar">
-                    <div class="bar-fill"></div>
-                  </div>
-                </div>
-
-                <div class="cta-visual-card cta-card-2">
-                  <div class="card-header-light">
-                    <span class="icon-badge">⚡</span>
-                    <span class="card-label">Efficiency</span>
-                  </div>
-                  <div class="card-metric">
-                    <span class="metric-value">3x</span>
-                    <span class="metric-label">Faster Results</span>
-                  </div>
-                  <div class="card-bar">
-                    <div class="bar-fill bar-fill-2"></div>
-                  </div>
-                </div>
-
-                <div class="cta-visual-card cta-card-3">
-                  <div class="card-header-light">
-                    <span class="icon-badge">✨</span>
-                    <span class="card-label">Engagement</span>
-                  </div>
-                  <div class="card-metric">
-                    <span class="metric-value">+500K</span>
-                    <span class="metric-label">Active Users</span>
-                  </div>
-                  <div class="card-bar">
-                    <div class="bar-fill bar-fill-3"></div>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Floating Elements -->
-              <div class="floating-element element-1">
-                <div class="pulse-ring"></div>
-              </div>
-              <div class="floating-element element-2">
-                <div class="pulse-ring"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bottom CTA Support Text -->
-          <div class="cta-footer-note">
-            <span class="icon">ℹ️</span>
-            <span class="text"
-              >Money-back guarantee if you're not satisfied within 14 days. No
-              questions asked.</span
-            >
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" id="contact" role="contentinfo">
-      <!-- Decorative Background Elements -->
-      <div class="footer-decoration">
-        <div class="footer-blob footer-blob-1"></div>
-        <div class="footer-blob footer-blob-2"></div>
-        <div class="footer-glow footer-glow-1"></div>
-        <div class="footer-grid"></div>
-      </div>
-
-      <div class="container">
-        <!-- Top Section: Main Content -->
-        <div class="footer-top">
-          <!-- Brand & CTA Column -->
-          <div class="footer-section footer-brand-section">
-            <div class="footer-logo-wrapper">
-              <img
-                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9IiM0MEUwRDAiLz4KPHBhdGggZD0iTTEyIDE2SDE2VjI0SDEyVjE2WiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTE4IDEySDIyVjI4SDE4VjEyWiIgZmlsbD0id2hpdGUiLz4KPHBhdGggZD0iTTI0IDE2SDI4VjI0SDI0VjE2WiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+"
-                alt="InnovateTech"
-                class="footer-logo"
-              />
-              <span class="footer-brand-name">InnovateTech</span>
-            </div>
-            <p class="footer-brand-description">
-              Empowering educators worldwide with AI-powered learning solutions
-              that transform classrooms and unlock student potential.
-            </p>
-
-            <!-- Social Links -->
-            <div class="footer-social">
-              <a href="#" class="social-link" aria-label="Twitter">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7"
-                  />
-                </svg>
-              </a>
-              <a href="#" class="social-link" aria-label="LinkedIn">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-                  />
-                  <circle cx="4" cy="4" r="2" />
-                </svg>
-              </a>
-              <a href="#" class="social-link" aria-label="GitHub">
-                <svg viewBox="0 0 24 24" fill="currentColor">
-                  <path
-                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-                  />
-                </svg>
-              </a>
-            </div>
-
-            <!-- Newsletter Signup -->
-            <div class="footer-newsletter">
-              <h4 class="newsletter-title">Stay Updated</h4>
-              <form
-                class="newsletter-form"
-                onsubmit="handleNewsletterSignup(event)"
-              >
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  class="newsletter-input"
-                  required
-                />
-                <button type="submit" class="newsletter-submit">
-                  <span class="submit-icon">→</span>
-                </button>
-              </form>
-              <p class="newsletter-note">
-                Get updates on new features and best practices.
-              </p>
-            </div>
-          </div>
-
-          <!-- Navigation Columns -->
-          <div class="footer-links-grid">
-            <!-- Product Column -->
-            <div class="footer-column">
-              <h4 class="column-title">Product</h4>
-              <nav class="column-links">
-                <a href="#features" class="column-link">Features</a>
-                <a href="#pricing" class="column-link">Pricing</a>
-                <a href="#demo" class="column-link">Demo</a>
-                <a href="#updates" class="column-link">What's New</a>
-                <a href="#roadmap" class="column-link">Roadmap</a>
-              </nav>
-            </div>
-
-            <!-- Company Column -->
-            <div class="footer-column">
-              <h4 class="column-title">Company</h4>
-              <nav class="column-links">
-                <a href="#about" class="column-link">About Us</a>
-                <a href="#blog" class="column-link">Blog</a>
-                <a href="#careers" class="column-link">Careers</a>
-                <a href="#press" class="column-link">Press Kit</a>
-                <a href="#partners" class="column-link">Partners</a>
-              </nav>
-            </div>
-
-            <!-- Support Column -->
-            <div class="footer-column">
-              <h4 class="column-title">Support</h4>
-              <nav class="column-links">
-                <a href="#help" class="column-link">Help Center</a>
-                <a href="#documentation" class="column-link">Documentation</a>
-                <a href="#contact-support" class="column-link"
-                  >Contact Support</a
-                >
-                <a href="#status" class="column-link">System Status</a>
-                <a href="#faq" class="column-link">FAQ</a>
-              </nav>
-            </div>
-
-            <!-- Legal Column -->
-            <div class="footer-column">
-              <h4 class="column-title">Legal</h4>
-              <nav class="column-links">
-                <a href="#terms" class="column-link">Terms of Service</a>
-                <a href="#privacy" class="column-link">Privacy Policy</a>
-                <a href="#cookies" class="column-link">Cookie Policy</a>
-                <a href="#security" class="column-link">Security</a>
-                <a href="#compliance" class="column-link">Compliance</a>
-              </nav>
-            </div>
-          </div>
-        </div>
-
-        <!-- Divider -->
-        <div class="footer-divider"></div>
-
-        <!-- Bottom Section: Credits & CTA -->
-        <div class="footer-bottom">
-          <div class="footer-bottom-left">
-            <p class="copyright">
-              &copy; 2025 InnovateTech. All rights reserved.
-            </p>
-            <div class="footer-status">
-              <span class="status-badge">✓ All Systems Operational</span>
-            </div>
-          </div>
-
-          <div class="footer-bottom-center">
-            <div class="footer-features">
-              <span class="feature-badge">🛡️ SOC 2 Certified</span>
-              <span class="feature-badge">🔒 GDPR Compliant</span>
-              <span class="feature-badge">⚡ 99.8% Uptime</span>
-            </div>
-          </div>
-
-          <div class="footer-bottom-right">
-            <button
-              class="btn btn-primary btn-sm footer-cta"
-              onclick="openModal()"
-            >
-              Start Free Trial
-            </button>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Sticky CTA -->
-    <div class="sticky-cta" id="sticky-cta">
-      <button class="btn btn-primary btn-sm">Book Demo</button>
-    </div>
-
-    <!-- Demo Modal -->
-    <dialog class="modal" id="demo-modal" aria-labelledby="modal-title">
-      <div class="modal-content">
-        <button class="close" id="close-modal" aria-label="Close dialog">
-          &times;
-        </button>
-        <h2 id="modal-title">Book Your Free Demo</h2>
-        <form class="demo-form" id="demo-form" aria-label="Demo booking form">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" required />
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="form-group">
-            <label for="school">School/Organization</label>
-            <input type="text" id="school" name="school" required />
-          </div>
-          <div class="form-group">
-            <label for="role">Your Role</label>
-            <select id="role" name="role" required>
-              <option value="">Select your role</option>
-              <option value="teacher">Teacher</option>
-              <option value="principal">Principal</option>
-              <option value="administrator">Administrator</option>
-              <option value="parent">Parent</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <button type="submit" class="btn btn-primary btn-lg">
-            Schedule Demo
-          </button>
-        </form>
-      </div>
-    </dialog>
-
-    <script src="script.js"></script>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+		/>
+		<meta
+			name="theme-color"
+			content="#40E0D0"
+		/>
+		<meta
+			name="mobile-web-app-capable"
+			content="yes"
+		/>
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="default"
+		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href="favicon.svg"
+		/>
+		<link
+			rel="alternate icon"
+			href="favicon.ico"
+		/>
+		<title>
+			InnovateTech - AI-Powered Learning Platform
+		</title>
+		<meta
+			name="description"
+			content="Unlock every student's potential with AI-powered learning. Personalized, adaptive learning experiences that evolve with every learner."
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+			crossorigin
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="styles.css"
+		/>
+	</head>
+	<body>
+		<!-- Modern Header Navigation -->
+		<header
+			class="header"
+			role="banner"
+		>
+			<nav
+				class="navbar"
+				id="navbar"
+				role="navigation"
+				aria-label="Main navigation"
+			>
+				<div class="nav-container">
+					<!-- Logo Section -->
+					<a
+						href="#"
+						class="nav-brand"
+					>
+						<div class="logo-wrapper">
+							<img
+								src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjAiIGN5PSIyMCIgcj0iMjAiIGZpbGw9InVybCgjZ3JhZGllbnQwX2xpbmVhcl8xXzEpIi8+CjxwYXRoIGQ9Ik0xMiAxNkgxNlYyNEgxMlYxNloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xOCAxMkgyMlYyOEgxOFYxMloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yNCAxNkgyOFYyNEgyNFYxNloiIGZpbGw9IndoaXRlIi8+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MF9saW5lYXJfMV8xIiB4MT0iMCIgeTE9IjAiIHgyPSI0MCIgeTI9IjQwIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+CjxzdG9wIHN0b3AtY29sb3I9IiM0MEUwRDAiLz4KPHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjZCNEFBIi8+CjwvbGluZWFyR3JhZGllbnQ+CjwvZGVmcz4KPC9zdmc+"
+								alt="InnovateTech Logo"
+								class="logo"
+							/>
+						</div>
+						<span class="brand-text"
+							>InnovateTech</span
+						>
+					</a>
+
+					<!-- Navigation Links -->
+					<div
+						class="nav-menu"
+						id="nav-menu"
+					>
+						<a
+							href="#features"
+							class="nav-link"
+						>
+							<span>Features</span>
+						</a>
+						<a
+							href="#how-it-works"
+							class="nav-link"
+						>
+							<span>How It Works</span>
+						</a>
+						<a
+							href="#for-schools"
+							class="nav-link"
+						>
+							<span>For Schools</span>
+						</a>
+						<a
+							href="#pricing"
+							class="nav-link"
+						>
+							<span>Pricing</span>
+						</a>
+						<a
+							href="#contact"
+							class="nav-link"
+						>
+							<span>Contact</span>
+						</a>
+					</div>
+
+					<!-- CTA Button -->
+					<div class="nav-actions">
+						<button
+							class="btn-demo"
+							onclick="openModal()"
+						>
+							<span class="btn-demo-text"
+								>Book Demo</span
+							>
+							<svg
+								class="btn-demo-icon"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+							>
+								<path
+									d="M6 3L11 8L6 13"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+						</button>
+					</div>
+
+					<!-- Mobile Menu Toggle -->
+					<button
+						class="hamburger"
+						id="hamburger"
+						aria-label="Toggle menu"
+					>
+						<span class="hamburger-line"></span>
+						<span class="hamburger-line"></span>
+						<span class="hamburger-line"></span>
+					</button>
+				</div>
+			</nav>
+		</header>
+
+		<!-- Modern Hero Section -->
+		<main>
+			<section
+				class="hero"
+				id="hero"
+				aria-labelledby="hero-title"
+			>
+				<!-- Background Elements -->
+				<div class="hero-bg">
+					<div class="hero-gradient"></div>
+					<div class="hero-grid"></div>
+				</div>
+
+				<div class="hero-container">
+					<div class="hero-content">
+						<!-- Badge -->
+						<div class="hero-badge">
+							<svg
+								class="badge-icon"
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+							>
+								<path
+									d="M8 1L10 6L15 6.5L11 10L12 15L8 12.5L4 15L5 10L1 6.5L6 6L8 1Z"
+									fill="currentColor"
+								/>
+							</svg>
+							<span
+								>AI-Powered Learning
+								Platform</span
+							>
+						</div>
+
+						<!-- Heading -->
+						<h1
+							class="hero-title"
+							id="hero-title"
+						>
+							Transform Education with
+							<span class="hero-highlight"
+								>Intelligent AI</span
+							>
+						</h1>
+
+						<!-- Subtitle -->
+						<p class="hero-subtitle">
+							Empower every student with
+							personalized, adaptive learning
+							experiences. InnovateTech uses
+							advanced AI to unlock potential at
+							scale.
+						</p>
+
+						<!-- CTA Buttons -->
+						<div class="hero-actions">
+							<button
+								class="hero-btn hero-btn-primary"
+								onclick="openModal()"
+							>
+								<span>Start Free Trial</span>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+								>
+									<path
+										d="M7 4L13 10L7 16"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</button>
+							<button
+								class="hero-btn hero-btn-secondary"
+							>
+								<svg
+									width="20"
+									height="20"
+									viewBox="0 0 20 20"
+									fill="none"
+								>
+									<circle
+										cx="10"
+										cy="10"
+										r="8"
+										stroke="currentColor"
+										stroke-width="1.5"
+									/>
+									<path
+										d="M8 7L13 10L8 13V7Z"
+										fill="currentColor"
+									/>
+								</svg>
+								<span>Watch Demo</span>
+							</button>
+						</div>
+
+						<!-- Stats -->
+						<div class="hero-stats">
+							<div class="hero-stat">
+								<div class="stat-value">
+									10,000+
+								</div>
+								<div class="stat-label">
+									Active Educators
+								</div>
+							</div>
+							<div class="stat-divider"></div>
+							<div class="hero-stat">
+								<div class="stat-value">
+									500K+
+								</div>
+								<div class="stat-label">
+									Students Reached
+								</div>
+							</div>
+							<div class="stat-divider"></div>
+							<div class="hero-stat">
+								<div class="stat-value">
+									99.8%
+								</div>
+								<div class="stat-label">
+									Platform Uptime
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Hero Visual -->
+					<div class="hero-visual">
+						<div class="hero-image-wrapper">
+							<div
+								class="hero-card hero-card-main"
+							>
+								<div class="card-header">
+									<div class="card-avatar">
+										<svg
+											width="24"
+											height="24"
+											viewBox="0 0 24 24"
+											fill="none"
+										>
+											<circle
+												cx="12"
+												cy="8"
+												r="4"
+												stroke="currentColor"
+												stroke-width="2"
+											/>
+											<path
+												d="M5 20C5 16.134 8.134 13 12 13C15.866 13 19 16.134 19 20"
+												stroke="currentColor"
+												stroke-width="2"
+												stroke-linecap="round"
+											/>
+										</svg>
+									</div>
+									<div class="card-info">
+										<div class="card-name">
+											Student Progress
+										</div>
+										<div class="card-status">
+											Real-time Analytics
+										</div>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="progress-item">
+										<span class="progress-label"
+											>Mathematics</span
+										>
+										<div class="progress-bar">
+											<div
+												class="progress-fill"
+												style="width: 87%"
+											></div>
+										</div>
+										<span class="progress-value"
+											>87%</span
+										>
+									</div>
+									<div class="progress-item">
+										<span class="progress-label"
+											>Science</span
+										>
+										<div class="progress-bar">
+											<div
+												class="progress-fill"
+												style="width: 92%"
+											></div>
+										</div>
+										<span class="progress-value"
+											>92%</span
+										>
+									</div>
+									<div class="progress-item">
+										<span class="progress-label"
+											>English</span
+										>
+										<div class="progress-bar">
+											<div
+												class="progress-fill"
+												style="width: 78%"
+											></div>
+										</div>
+										<span class="progress-value"
+											>78%</span
+										>
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="hero-card hero-card-float hero-card-1"
+							>
+								<div
+									class="float-icon float-icon-achievement"
+								>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+									>
+										<path
+											d="M10 2L12 8L18 8.5L13 12L14.5 18L10 15L5.5 18L7 12L2 8.5L8 8L10 2Z"
+											fill="currentColor"
+										/>
+									</svg>
+								</div>
+								<div class="float-content">
+									<div class="float-title">
+										🎉 Achievement Unlocked!
+									</div>
+									<div class="float-desc">
+										Completed 10 lessons streak
+									</div>
+									<div class="float-badge">
+										+50 XP
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="hero-card hero-card-float hero-card-2"
+							>
+								<div
+									class="float-icon float-icon-success"
+								>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 20 20"
+										fill="none"
+									>
+										<path
+											d="M3 10L8 15L17 6"
+											stroke="currentColor"
+											stroke-width="2.5"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+								<div class="float-content">
+									<div class="float-title">
+										Perfect Score! 🌟
+									</div>
+									<div class="float-desc">
+										98% on Algebra Quiz
+									</div>
+									<div class="float-time">
+										2 minutes ago
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- How It Works Section -->
+			<section
+				class="how-it-works"
+				id="how-it-works"
+			>
+				<div class="how-bg">
+					<div
+						class="how-gradient-orb how-orb-1"
+					></div>
+					<div
+						class="how-gradient-orb how-orb-2"
+					></div>
+				</div>
+
+				<div class="container">
+					<div class="how-header">
+						<span class="how-badge">
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									d="M12 2L2 7L12 12L22 7L12 2Z"
+								/>
+								<path d="M2 17L12 22L22 17" />
+								<path d="M2 12L12 17L22 12" />
+							</svg>
+							<span>Simple Process</span>
+						</span>
+						<h2 class="how-title">
+							Transform Learning in
+							<span class="how-highlight"
+								>3 Simple Steps</span
+							>
+						</h2>
+						<p class="how-subtitle">
+							Our intelligent platform makes
+							personalized learning effortless.
+							Set up in minutes, see results in
+							days.
+						</p>
+					</div>
+
+					<div class="how-timeline">
+						<!-- Step 1 -->
+						<div
+							class="how-step"
+							data-step="1"
+						>
+							<div class="how-step-number">
+								<span>01</span>
+								<div class="step-pulse"></div>
+							</div>
+
+							<div class="how-step-content">
+								<div class="how-step-card">
+									<div
+										class="step-icon-box step-icon-assess"
+									>
+										<svg
+											width="28"
+											height="28"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+										>
+											<path
+												d="M9 11L12 14L22 4"
+											/>
+											<path
+												d="M21 12V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H16"
+											/>
+										</svg>
+									</div>
+
+									<div class="step-content-body">
+										<h3 class="step-title">
+											Assess & Analyze
+										</h3>
+										<p class="step-description">
+											Our AI instantly evaluates
+											each student's current
+											level, learning style, and
+											preferences through
+											intelligent assessments.
+										</p>
+
+										<div class="step-features">
+											<div class="step-feature">
+												<svg
+													width="18"
+													height="18"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<circle
+														cx="12"
+														cy="12"
+														r="10"
+													/>
+													<path
+														d="M9 12L11 14L15 10"
+														stroke="white"
+														stroke-width="2"
+														fill="none"
+													/>
+												</svg>
+												<span
+													>Smart diagnostics</span
+												>
+											</div>
+											<div class="step-feature">
+												<svg
+													width="18"
+													height="18"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<circle
+														cx="12"
+														cy="12"
+														r="10"
+													/>
+													<path
+														d="M9 12L11 14L15 10"
+														stroke="white"
+														stroke-width="2"
+														fill="none"
+													/>
+												</svg>
+												<span
+													>Learning style
+													detection</span
+												>
+											</div>
+											<div class="step-feature">
+												<svg
+													width="18"
+													height="18"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<circle
+														cx="12"
+														cy="12"
+														r="10"
+													/>
+													<path
+														d="M9 12L11 14L15 10"
+														stroke="white"
+														stroke-width="2"
+														fill="none"
+													/>
+												</svg>
+												<span
+													>Real-time
+													insights</span
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Step 2 -->
+						<div
+							class="how-step"
+							data-step="2"
+						>
+							<div class="how-step-number">
+								<span>02</span>
+								<div class="step-pulse"></div>
+							</div>
+
+							<div class="how-step-content">
+								<div class="how-step-card">
+									<div
+										class="step-icon-box step-icon-adapt"
+									>
+										<svg
+											width="28"
+											height="28"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+										>
+											<path
+												d="M12 2V6M12 18V22M4.93 4.93L7.76 7.76M16.24 16.24L19.07 19.07M2 12H6M18 12H22M4.93 19.07L7.76 16.24M16.24 7.76L19.07 4.93"
+											/>
+											<circle
+												cx="12"
+												cy="12"
+												r="3"
+											/>
+										</svg>
+									</div>
+
+									<div class="step-content-body">
+										<h3 class="step-title">
+											Personalize & Adapt
+										</h3>
+										<p class="step-description">
+											Content automatically
+											adjusts to each learner's
+											pace and preferences,
+											creating a unique path for
+											optimal growth.
+										</p>
+
+										<div class="step-features">
+											<div class="step-feature">
+												<svg
+													width="18"
+													height="18"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<circle
+														cx="12"
+														cy="12"
+														r="10"
+													/>
+													<path
+														d="M9 12L11 14L15 10"
+														stroke="white"
+														stroke-width="2"
+														fill="none"
+													/>
+												</svg>
+												<span
+													>Dynamic content</span
+												>
+											</div>
+											<div class="step-feature">
+												<svg
+													width="18"
+													height="18"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<circle
+														cx="12"
+														cy="12"
+														r="10"
+													/>
+													<path
+														d="M9 12L11 14L15 10"
+														stroke="white"
+														stroke-width="2"
+														fill="none"
+													/>
+												</svg>
+												<span
+													>Adaptive
+													difficulty</span
+												>
+											</div>
+											<div class="step-feature">
+												<svg
+													width="18"
+													height="18"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<circle
+														cx="12"
+														cy="12"
+														r="10"
+													/>
+													<path
+														d="M9 12L11 14L15 10"
+														stroke="white"
+														stroke-width="2"
+														fill="none"
+													/>
+												</svg>
+												<span
+													>Custom learning
+													paths</span
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Step 3 -->
+						<div
+							class="how-step"
+							data-step="3"
+						>
+							<div class="how-step-number">
+								<span>03</span>
+								<div class="step-pulse"></div>
+							</div>
+
+							<div class="how-step-content">
+								<div class="how-step-card">
+									<div
+										class="step-icon-box step-icon-grow"
+									>
+										<svg
+											width="28"
+											height="28"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+										>
+											<path
+												d="M22 12L18 8M22 12L18 16M22 12H12"
+											/>
+											<path
+												d="M2 12L6 8M2 12L6 16M2 12H12"
+											/>
+											<circle
+												cx="12"
+												cy="12"
+												r="2"
+											/>
+										</svg>
+									</div>
+
+									<div class="step-content-body">
+										<h3 class="step-title">
+											Track & Excel
+										</h3>
+										<p class="step-description">
+											Monitor progress with
+											detailed analytics and
+											celebrate achievements as
+											students reach new
+											milestones confidently.
+										</p>
+
+										<div class="step-features">
+											<div class="step-feature">
+												<svg
+													width="18"
+													height="18"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<circle
+														cx="12"
+														cy="12"
+														r="10"
+													/>
+													<path
+														d="M9 12L11 14L15 10"
+														stroke="white"
+														stroke-width="2"
+														fill="none"
+													/>
+												</svg>
+												<span
+													>Progress tracking</span
+												>
+											</div>
+											<div class="step-feature">
+												<svg
+													width="18"
+													height="18"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<circle
+														cx="12"
+														cy="12"
+														r="10"
+													/>
+													<path
+														d="M9 12L11 14L15 10"
+														stroke="white"
+														stroke-width="2"
+														fill="none"
+													/>
+												</svg>
+												<span
+													>Milestone
+													celebrations</span
+												>
+											</div>
+											<div class="step-feature">
+												<svg
+													width="18"
+													height="18"
+													viewBox="0 0 24 24"
+													fill="currentColor"
+												>
+													<circle
+														cx="12"
+														cy="12"
+														r="10"
+													/>
+													<path
+														d="M9 12L11 14L15 10"
+														stroke="white"
+														stroke-width="2"
+														fill="none"
+													/>
+												</svg>
+												<span
+													>Performance
+													reports</span
+												>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Connecting Line -->
+						<div class="timeline-line"></div>
+					</div>
+
+					<!-- Stats Section -->
+					<div class="how-stats">
+						<div class="how-stat-card">
+							<div class="stat-icon-wrapper">
+								<span class="stat-emoji">⚡</span>
+							</div>
+							<div class="stat-info">
+								<div class="stat-value">
+									3x Faster
+								</div>
+								<div class="stat-label">
+									Learning Speed
+								</div>
+							</div>
+						</div>
+
+						<div class="how-stat-card">
+							<div class="stat-icon-wrapper">
+								<span class="stat-emoji">🎯</span>
+							</div>
+							<div class="stat-info">
+								<div class="stat-value">94%</div>
+								<div class="stat-label">
+									Success Rate
+								</div>
+							</div>
+						</div>
+
+						<div class="how-stat-card">
+							<div class="stat-icon-wrapper">
+								<span class="stat-emoji">🏆</span>
+							</div>
+							<div class="stat-info">
+								<div class="stat-value">15K+</div>
+								<div class="stat-label">
+									Active Schools
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Benefits Section -->
+			<section
+				class="benefits"
+				id="features"
+			>
+				<div class="benefits-bg">
+					<div
+						class="benefits-circle benefits-circle-1"
+					></div>
+					<div
+						class="benefits-circle benefits-circle-2"
+					></div>
+				</div>
+
+				<div class="container">
+					<div class="benefits-header">
+						<span class="benefits-tag">
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+							>
+								<path
+									d="M12 2L2 7L12 12L22 7L12 2Z"
+								/>
+								<path d="M2 17L12 22L22 17" />
+								<path d="M2 12L12 17L22 12" />
+							</svg>
+							<span>Powerful Features</span>
+						</span>
+						<h2 class="benefits-title">
+							Built for
+							<span class="benefits-highlight"
+								>Everyone</span
+							>
+						</h2>
+						<p class="benefits-description">
+							Empowering students, educators, and
+							parents with tools designed to make
+							learning personal, measurable, and
+							engaging.
+						</p>
+					</div>
+
+					<div class="benefits-grid">
+						<!-- Benefit Card 1 -->
+						<div class="benefit-card">
+							<div class="benefit-card-header">
+								<div
+									class="benefit-icon benefit-icon-students"
+								>
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+									>
+										<path
+											d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+										/>
+										<circle
+											cx="12"
+											cy="7"
+											r="4"
+										/>
+									</svg>
+								</div>
+								<div class="benefit-card-tag">
+									For Students
+								</div>
+							</div>
+
+							<h3 class="benefit-card-title">
+								Personalized Learning
+							</h3>
+							<p class="benefit-card-text">
+								Adaptive paths that match your
+								pace and style, keeping you
+								motivated with engaging content
+								tailored just for you.
+							</p>
+
+							<div class="benefit-list">
+								<div class="benefit-item">
+									<div class="benefit-check">
+										<svg
+											width="14"
+											height="14"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="3"
+										>
+											<polyline
+												points="20 6 9 17 4 12"
+											/>
+										</svg>
+									</div>
+									<span
+										>Custom learning paths</span
+									>
+								</div>
+								<div class="benefit-item">
+									<div class="benefit-check">
+										<svg
+											width="14"
+											height="14"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="3"
+										>
+											<polyline
+												points="20 6 9 17 4 12"
+											/>
+										</svg>
+									</div>
+									<span>Progress tracking</span>
+								</div>
+								<div class="benefit-item">
+									<div class="benefit-check">
+										<svg
+											width="14"
+											height="14"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="3"
+										>
+											<polyline
+												points="20 6 9 17 4 12"
+											/>
+										</svg>
+									</div>
+									<span>Achievement rewards</span>
+								</div>
+							</div>
+
+							<div class="benefit-card-footer">
+								<span class="benefit-metric">
+									<strong>500K+</strong> Active
+									Learners
+								</span>
+							</div>
+						</div>
+
+						<!-- Benefit Card 2 -->
+						<div
+							class="benefit-card benefit-card-featured"
+						>
+							<div class="featured-badge">
+								Most Popular
+							</div>
+							<div class="benefit-card-header">
+								<div
+									class="benefit-icon benefit-icon-teachers"
+								>
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+									>
+										<path
+											d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+										/>
+										<circle
+											cx="9"
+											cy="7"
+											r="4"
+										/>
+										<path
+											d="M23 21v-2a4 4 0 0 0-3-3.87"
+										/>
+										<path
+											d="M16 3.13a4 4 0 0 1 0 7.75"
+										/>
+									</svg>
+								</div>
+								<div class="benefit-card-tag">
+									For Educators
+								</div>
+							</div>
+
+							<h3 class="benefit-card-title">
+								Powerful Insights
+							</h3>
+							<p class="benefit-card-text">
+								Comprehensive analytics and
+								automated tools that give you deep
+								insights into every student's
+								learning journey.
+							</p>
+
+							<div class="benefit-list">
+								<div class="benefit-item">
+									<div class="benefit-check">
+										<svg
+											width="14"
+											height="14"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="3"
+										>
+											<polyline
+												points="20 6 9 17 4 12"
+											/>
+										</svg>
+									</div>
+									<span>Real-time analytics</span>
+								</div>
+								<div class="benefit-item">
+									<div class="benefit-check">
+										<svg
+											width="14"
+											height="14"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="3"
+										>
+											<polyline
+												points="20 6 9 17 4 12"
+											/>
+										</svg>
+									</div>
+									<span>Automated grading</span>
+								</div>
+								<div class="benefit-item">
+									<div class="benefit-check">
+										<svg
+											width="14"
+											height="14"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="3"
+										>
+											<polyline
+												points="20 6 9 17 4 12"
+											/>
+										</svg>
+									</div>
+									<span
+										>Class performance
+										insights</span
+									>
+								</div>
+							</div>
+
+							<div class="benefit-card-footer">
+								<span class="benefit-metric">
+									<strong>95%</strong> Teacher
+									Satisfaction
+								</span>
+							</div>
+						</div>
+
+						<!-- Benefit Card 3 -->
+						<div class="benefit-card">
+							<div class="benefit-card-header">
+								<div
+									class="benefit-icon benefit-icon-parents"
+								>
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+									>
+										<path
+											d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+										/>
+										<polyline
+											points="9 22 9 12 15 12 15 22"
+										/>
+									</svg>
+								</div>
+								<div class="benefit-card-tag">
+									For Parents
+								</div>
+							</div>
+
+							<h3 class="benefit-card-title">
+								Track Progress
+							</h3>
+							<p class="benefit-card-text">
+								Stay connected with detailed
+								reports and clear visibility into
+								your child's learning milestones
+								and achievements.
+							</p>
+
+							<div class="benefit-list">
+								<div class="benefit-item">
+									<div class="benefit-check">
+										<svg
+											width="14"
+											height="14"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="3"
+										>
+											<polyline
+												points="20 6 9 17 4 12"
+											/>
+										</svg>
+									</div>
+									<span>Weekly reports</span>
+								</div>
+								<div class="benefit-item">
+									<div class="benefit-check">
+										<svg
+											width="14"
+											height="14"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="3"
+										>
+											<polyline
+												points="20 6 9 17 4 12"
+											/>
+										</svg>
+									</div>
+									<span>Milestone tracking</span>
+								</div>
+								<div class="benefit-item">
+									<div class="benefit-check">
+										<svg
+											width="14"
+											height="14"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="3"
+										>
+											<polyline
+												points="20 6 9 17 4 12"
+											/>
+										</svg>
+									</div>
+									<span>Growth insights</span>
+								</div>
+							</div>
+
+							<div class="benefit-card-footer">
+								<span class="benefit-metric">
+									<strong>50%</strong> Time Saved
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Video Demo Section -->
+			<section
+				class="demo"
+				id="demo"
+			>
+				<!-- Background Elements -->
+				<div class="demo-bg">
+					<div
+						class="demo-circle demo-circle-1"
+					></div>
+					<div
+						class="demo-circle demo-circle-2"
+					></div>
+					<div class="demo-grid-pattern"></div>
+				</div>
+
+				<div class="container">
+					<!-- Section Header -->
+					<div class="demo-header">
+						<div class="demo-tag">
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+							>
+								<path
+									d="M8 14.5C11.5899 14.5 14.5 11.5899 14.5 8C14.5 4.41015 11.5899 1.5 8 1.5C4.41015 1.5 1.5 4.41015 1.5 8C1.5 11.5899 4.41015 14.5 8 14.5Z"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M6.5 8L8 9.5L11 6.5"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							See It In Action
+						</div>
+						<h2 class="demo-title">
+							Experience
+							<span class="demo-highlight"
+								>InnovateTech</span
+							>
+							Live
+						</h2>
+						<p class="demo-description">
+							Watch how educators and students
+							transform their learning experience
+							with our intelligent platform
+						</p>
+					</div>
+
+					<!-- Video Preview -->
+					<div class="demo-video-wrapper">
+						<div class="demo-video-container">
+							<!-- Video Frame -->
+							<div class="demo-video-frame">
+								<div class="demo-video-content">
+									<!-- Play Button -->
+									<button
+										class="demo-play-button"
+										id="play-demo"
+									>
+										<span
+											class="demo-play-pulse"
+										></span>
+										<span class="demo-play-icon">
+											<svg
+												width="24"
+												height="28"
+												viewBox="0 0 24 28"
+												fill="none"
+											>
+												<path
+													d="M22.5 11.8038C24.5 12.9465 24.5 15.8597 22.5 17.0024L4.5 27.1865C2.5 28.3292 0 26.9725 0 24.6872L0 4.31895C0 2.03366 2.5 0.676979 4.5 1.81967L22.5 11.8038Z"
+													fill="currentColor"
+												/>
+											</svg>
+										</span>
+									</button>
+
+									<!-- Duration Badge -->
+									<div
+										class="demo-duration-badge"
+									>
+										<svg
+											width="16"
+											height="16"
+											viewBox="0 0 16 16"
+											fill="none"
+										>
+											<circle
+												cx="8"
+												cy="8"
+												r="6.5"
+												stroke="currentColor"
+												stroke-width="1.5"
+											/>
+											<path
+												d="M8 4.5V8L10.5 10.5"
+												stroke="currentColor"
+												stroke-width="1.5"
+												stroke-linecap="round"
+											/>
+										</svg>
+										<span>2:30 min</span>
+									</div>
+								</div>
+
+								<!-- Floating Feature Tags -->
+								<div class="demo-feature-tags">
+									<div
+										class="demo-feature-tag demo-tag-1"
+									>
+										<span class="demo-tag-icon"
+											>✨</span
+										>
+										<span class="demo-tag-text"
+											>AI-Powered</span
+										>
+									</div>
+									<div
+										class="demo-feature-tag demo-tag-2"
+									>
+										<span class="demo-tag-icon"
+											>⚡</span
+										>
+										<span class="demo-tag-text"
+											>Real-Time</span
+										>
+									</div>
+									<div
+										class="demo-feature-tag demo-tag-3"
+									>
+										<span class="demo-tag-icon"
+											>📊</span
+										>
+										<span class="demo-tag-text"
+											>Analytics</span
+										>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Stats Row -->
+						<div class="demo-stats">
+							<div class="demo-stat-item">
+								<div class="demo-stat-icon">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<path
+											d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45768C17.623 10.1593 16.8604 10.6597 16 10.88"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+								<div class="demo-stat-content">
+									<div class="demo-stat-value">
+										50K+
+									</div>
+									<div class="demo-stat-label">
+										Active Users
+									</div>
+								</div>
+							</div>
+							<div class="demo-stat-item">
+								<div class="demo-stat-icon">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<path
+											d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+								<div class="demo-stat-content">
+									<div class="demo-stat-value">
+										4.9/5
+									</div>
+									<div class="demo-stat-label">
+										User Rating
+									</div>
+								</div>
+							</div>
+							<div class="demo-stat-item">
+								<div class="demo-stat-icon">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+									>
+										<path
+											d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+										<path
+											d="M12 6V12L16 14"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+								</div>
+								<div class="demo-stat-content">
+									<div class="demo-stat-value">
+										24/7
+									</div>
+									<div class="demo-stat-label">
+										Support
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- CTA Section -->
+					<div class="demo-cta">
+						<h3 class="demo-cta-title">
+							Ready to transform your classroom?
+						</h3>
+						<p class="demo-cta-text">
+							Join thousands of educators already
+							using InnovateTech
+						</p>
+						<div class="demo-cta-actions">
+							<button
+								class="btn btn-primary"
+								onclick="openModal()"
+							>
+								Start Free Trial
+							</button>
+							<button
+								class="btn btn-outline"
+								onclick="openModal()"
+							>
+								Schedule Demo
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Testimonials Section -->
+			<section
+				class="testimonials"
+				aria-labelledby="testimonials-title"
+			>
+				<!-- Background Elements -->
+				<div class="testimonials-bg">
+					<div
+						class="testimonials-circle testimonials-circle-1"
+					></div>
+					<div
+						class="testimonials-circle testimonials-circle-2"
+					></div>
+				</div>
+
+				<div class="container">
+					<!-- Section Header -->
+					<div class="testimonials-header">
+						<div class="testimonials-tag">
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+							>
+								<path
+									d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							Success Stories
+						</div>
+						<h2
+							class="testimonials-title"
+							id="testimonials-title"
+						>
+							What Educators and
+							<span class="testimonials-highlight"
+								>Learners</span
+							>
+							Say
+						</h2>
+						<p class="testimonials-description">
+							Discover how InnovateTech is
+							transforming education across
+							schools and impacting lives
+							positively
+						</p>
+					</div>
+
+					<!-- Testimonials Grid -->
+					<div class="testimonials-grid">
+						<!-- Testimonial 1 -->
+						<div class="testimonial-card">
+							<div class="testimonial-quote-icon">
+								<svg
+									width="40"
+									height="32"
+									viewBox="0 0 40 32"
+									fill="none"
+								>
+									<path
+										d="M0 16C0 7.16344 7.16344 0 16 0V8C11.5817 8 8 11.5817 8 16V32H0V16Z"
+										fill="currentColor"
+									/>
+									<path
+										d="M24 16C24 7.16344 31.1634 0 40 0V8C35.5817 8 32 11.5817 32 16V32H24V16Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</div>
+							<p class="testimonial-text">
+								InnovateTech has transformed how
+								my students learn. The AI adapts
+								to each child's needs, and I can
+								see remarkable improvements in
+								engagement and understanding.
+							</p>
+							<div class="testimonial-rating">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+							</div>
+							<div class="testimonial-author">
+								<div
+									class="testimonial-avatar testimonial-avatar-1"
+								>
+									<img
+										src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23667eea'/%3E%3Ctext x='50' y='50' font-size='40' text-anchor='middle' dy='.35em' fill='white' font-family='Arial'%3ESC%3C/text%3E%3C/svg%3E"
+										alt="Sarah Chen"
+									/>
+								</div>
+								<div
+									class="testimonial-author-info"
+								>
+									<div
+										class="testimonial-author-name"
+									>
+										Sarah Chen
+									</div>
+									<div
+										class="testimonial-author-role"
+									>
+										5th Grade Teacher
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Testimonial 2 -->
+						<div
+							class="testimonial-card testimonial-card-featured"
+						>
+							<div
+								class="testimonial-featured-badge"
+							>
+								Most Popular
+							</div>
+							<div class="testimonial-quote-icon">
+								<svg
+									width="40"
+									height="32"
+									viewBox="0 0 40 32"
+									fill="none"
+								>
+									<path
+										d="M0 16C0 7.16344 7.16344 0 16 0V8C11.5817 8 8 11.5817 8 16V32H0V16Z"
+										fill="currentColor"
+									/>
+									<path
+										d="M24 16C24 7.16344 31.1634 0 40 0V8C35.5817 8 32 11.5817 32 16V32H24V16Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</div>
+							<p class="testimonial-text">
+								The insights provided help me
+								identify learning gaps early and
+								adjust my teaching methods. It's
+								like having a teaching assistant
+								that never sleeps.
+							</p>
+							<div class="testimonial-rating">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+							</div>
+							<div class="testimonial-author">
+								<div
+									class="testimonial-avatar testimonial-avatar-2"
+								>
+									<img
+										src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%23f093fb'/%3E%3Ctext x='50' y='50' font-size='40' text-anchor='middle' dy='.35em' fill='white' font-family='Arial'%3EMR%3C/text%3E%3C/svg%3E"
+										alt="Dr. Michael Rodriguez"
+									/>
+								</div>
+								<div
+									class="testimonial-author-info"
+								>
+									<div
+										class="testimonial-author-name"
+									>
+										Dr. Michael Rodriguez
+									</div>
+									<div
+										class="testimonial-author-role"
+									>
+										Principal, Innovation Middle
+										School
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Testimonial 3 -->
+						<div class="testimonial-card">
+							<div class="testimonial-quote-icon">
+								<svg
+									width="40"
+									height="32"
+									viewBox="0 0 40 32"
+									fill="none"
+								>
+									<path
+										d="M0 16C0 7.16344 7.16344 0 16 0V8C11.5817 8 8 11.5817 8 16V32H0V16Z"
+										fill="currentColor"
+									/>
+									<path
+										d="M24 16C24 7.16344 31.1634 0 40 0V8C35.5817 8 32 11.5817 32 16V32H24V16Z"
+										fill="currentColor"
+									/>
+								</svg>
+							</div>
+							<p class="testimonial-text">
+								My daughter went from struggling
+								with math to actually enjoying it.
+								The personalized approach made all
+								the difference in her confidence
+								and performance.
+							</p>
+							<div class="testimonial-rating">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 16 16"
+									fill="none"
+								>
+									<path
+										d="M8 1.33333L10.06 5.50667L14.6667 6.18L11.3333 9.42667L12.12 14.0133L8 11.8467L3.88 14.0133L4.66667 9.42667L1.33333 6.18L5.94 5.50667L8 1.33333Z"
+										fill="#FBB040"
+									/>
+								</svg>
+							</div>
+							<div class="testimonial-author">
+								<div
+									class="testimonial-avatar testimonial-avatar-3"
+								>
+									<img
+										src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%234facfe'/%3E%3Ctext x='50' y='50' font-size='40' text-anchor='middle' dy='.35em' fill='white' font-family='Arial'%3EJP%3C/text%3E%3C/svg%3E"
+										alt="Jennifer Park"
+									/>
+								</div>
+								<div
+									class="testimonial-author-info"
+								>
+									<div
+										class="testimonial-author-name"
+									>
+										Jennifer Park
+									</div>
+									<div
+										class="testimonial-author-role"
+									>
+										Parent of 7th Grader
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Stats Row -->
+					<div class="testimonials-stats">
+						<div class="testimonials-stat-item">
+							<div
+								class="testimonials-stat-value"
+							>
+								10K+
+							</div>
+							<div
+								class="testimonials-stat-label"
+							>
+								Educators Trust Us
+							</div>
+						</div>
+						<div class="testimonials-stat-item">
+							<div
+								class="testimonials-stat-value"
+							>
+								250K+
+							</div>
+							<div
+								class="testimonials-stat-label"
+							>
+								Students Engaged
+							</div>
+						</div>
+						<div class="testimonials-stat-item">
+							<div
+								class="testimonials-stat-value"
+							>
+								4.8/5
+							</div>
+							<div
+								class="testimonials-stat-label"
+							>
+								Average Rating
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Schools Section -->
+			<section
+				class="for-schools"
+				id="for-schools"
+			>
+				<!-- Background Elements -->
+				<div class="schools-bg">
+					<div
+						class="schools-circle schools-circle-1"
+					></div>
+					<div
+						class="schools-circle schools-circle-2"
+					></div>
+					<div class="schools-pattern"></div>
+				</div>
+
+				<div class="container">
+					<!-- Section Header -->
+					<div class="schools-header">
+						<div class="schools-tag">
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+							>
+								<path
+									d="M8 1.33333L14.6667 5.33333V10.6667C14.6667 11.7275 14.2452 12.745 13.4951 13.4951C12.745 14.2452 11.7275 14.6667 10.6667 14.6667H5.33333C4.27247 14.6667 3.25505 14.2452 2.50491 13.4951C1.75476 12.745 1.33333 11.7275 1.33333 10.6667V5.33333L8 1.33333Z"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+								<path
+									d="M8 8C9.10457 8 10 7.10457 10 6C10 4.89543 9.10457 4 8 4C6.89543 4 6 4.89543 6 6C6 7.10457 6.89543 8 8 8Z"
+									stroke="currentColor"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+							For Educational Leaders
+						</div>
+						<h2 class="schools-title">
+							Built for
+							<span class="schools-highlight"
+								>Educational Excellence</span
+							>
+						</h2>
+						<p class="schools-description">
+							Empower your entire district with
+							enterprise-grade AI technology
+							designed specifically for schools
+							and educational institutions
+						</p>
+					</div>
+
+					<!-- Features Grid -->
+					<div class="schools-features-grid">
+						<!-- Feature 1 -->
+						<div class="schools-feature-card">
+							<div
+								class="schools-feature-icon schools-icon-1"
+							>
+								<svg
+									width="32"
+									height="32"
+									viewBox="0 0 32 32"
+									fill="none"
+								>
+									<path
+										d="M16 4L4 10V18C4 23.33 7.68 28.48 13 30C18.32 28.48 22 23.33 22 18V10L16 4Z"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										transform="translate(5, 1)"
+									/>
+									<path
+										d="M14 18L18 14L14 10"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										transform="translate(5, 1)"
+									/>
+								</svg>
+							</div>
+							<h3 class="schools-feature-title">
+								District-Wide Integration
+							</h3>
+							<p class="schools-feature-text">
+								Seamlessly integrates with your
+								existing LMS and student
+								information systems for unified
+								learning management
+							</p>
+							<ul class="schools-feature-list">
+								<li>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											d="M13.3333 4L6 11.3333L2.66667 8"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									LMS Compatibility
+								</li>
+								<li>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											d="M13.3333 4L6 11.3333L2.66667 8"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									SSO Support
+								</li>
+								<li>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											d="M13.3333 4L6 11.3333L2.66667 8"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									Data Sync
+								</li>
+							</ul>
+						</div>
+
+						<!-- Feature 2 -->
+						<div
+							class="schools-feature-card schools-feature-card-highlighted"
+						>
+							<div class="schools-featured-badge">
+								Popular
+							</div>
+							<div
+								class="schools-feature-icon schools-icon-2"
+							>
+								<svg
+									width="32"
+									height="32"
+									viewBox="0 0 32 32"
+									fill="none"
+								>
+									<path
+										d="M8 21.3333H24"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M8 16H24"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+									<path
+										d="M8 10.6667H24"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<h3 class="schools-feature-title">
+								Comprehensive Analytics
+							</h3>
+							<p class="schools-feature-text">
+								Track student progress, identify
+								learning trends, and make
+								data-driven decisions across your
+								entire district
+							</p>
+							<ul class="schools-feature-list">
+								<li>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											d="M13.3333 4L6 11.3333L2.66667 8"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									Real-Time Reports
+								</li>
+								<li>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											d="M13.3333 4L6 11.3333L2.66667 8"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									Trend Analysis
+								</li>
+								<li>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											d="M13.3333 4L6 11.3333L2.66667 8"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									Performance Insights
+								</li>
+							</ul>
+						</div>
+
+						<!-- Feature 3 -->
+						<div class="schools-feature-card">
+							<div
+								class="schools-feature-icon schools-icon-3"
+							>
+								<svg
+									width="32"
+									height="32"
+									viewBox="0 0 32 32"
+									fill="none"
+								>
+									<path
+										d="M16 4L19.09 11.26L27 12.27L21.5 17.64L22.82 25.52L16 21.77L9.18 25.52L10.5 17.64L5 12.27L12.91 11.26L16 4Z"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+							</div>
+							<h3 class="schools-feature-title">
+								Professional Development
+							</h3>
+							<p class="schools-feature-text">
+								Ongoing training and support to
+								help educators maximize the
+								potential of AI-powered learning
+							</p>
+							<ul class="schools-feature-list">
+								<li>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											d="M13.3333 4L6 11.3333L2.66667 8"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									Educator Training
+								</li>
+								<li>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											d="M13.3333 4L6 11.3333L2.66667 8"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									24/7 Support
+								</li>
+								<li>
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 16 16"
+										fill="none"
+									>
+										<path
+											d="M13.3333 4L6 11.3333L2.66667 8"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+										/>
+									</svg>
+									Resources Library
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Stats Section -->
+					<div class="schools-stats">
+						<div class="schools-stat-card">
+							<div class="schools-stat-value">
+								99.8%
+							</div>
+							<div class="schools-stat-label">
+								Uptime SLA
+							</div>
+						</div>
+						<div class="schools-stat-card">
+							<div class="schools-stat-value">
+								1000+
+							</div>
+							<div class="schools-stat-label">
+								Schools Served
+							</div>
+						</div>
+						<div class="schools-stat-card">
+							<div class="schools-stat-value">
+								2M+
+							</div>
+							<div class="schools-stat-label">
+								Students Supported
+							</div>
+						</div>
+						<div class="schools-stat-card">
+							<div class="schools-stat-value">
+								24/7
+							</div>
+							<div class="schools-stat-label">
+								Dedicated Support
+							</div>
+						</div>
+					</div>
+
+					<!-- CTA Section -->
+					<div class="schools-cta">
+						<h3 class="schools-cta-title">
+							Ready to transform your district?
+						</h3>
+						<p class="schools-cta-text">
+							Schedule a personalized demo and
+							discover how InnovateTech can
+							revolutionize learning in your
+							schools
+						</p>
+						<div class="schools-cta-actions">
+							<button
+								class="btn btn-primary"
+								onclick="openModal()"
+							>
+								Request Demo
+							</button>
+							<button class="btn btn-outline">
+								Download Resources
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section
+				class="cta-section"
+				id="cta-final"
+				aria-labelledby="cta-title"
+			>
+				<!-- Decorative Background Elements -->
+				<div class="cta-decoration">
+					<div class="cta-blob cta-blob-1"></div>
+					<div class="cta-blob cta-blob-2"></div>
+					<div class="cta-glow cta-glow-1"></div>
+					<div class="cta-grid"></div>
+				</div>
+
+				<div class="container">
+					<div class="cta-wrapper">
+						<!-- Main CTA Content -->
+						<div class="cta-content">
+							<div class="cta-badge">
+								<span class="badge-dot"></span>
+								<span class="badge-text"
+									>Limited Time Offer</span
+								>
+							</div>
+
+							<h2
+								id="cta-title"
+								class="cta-title"
+							>
+								Transform Your
+								<span class="gradient-text"
+									>Classroom</span
+								>
+								<br />in Just
+								<span class="highlight"
+									>30 Days</span
+								>
+							</h2>
+
+							<p class="cta-subtitle">
+								Join 10,000+ educators who've
+								already revolutionized their
+								teaching. Get 50% off your first
+								month + exclusive onboarding
+								support.
+							</p>
+
+							<!-- Stats Row -->
+							<div class="cta-stats-row">
+								<div class="cta-stat">
+									<span class="cta-stat-number"
+										>⚡</span
+									>
+									<span class="cta-stat-text"
+										>Free 30-Day Trial</span
+									>
+								</div>
+								<div class="cta-stat">
+									<span class="cta-stat-number"
+										>🎯</span
+									>
+									<span class="cta-stat-text"
+										>No Credit Card Required</span
+									>
+								</div>
+								<div class="cta-stat">
+									<span class="cta-stat-number"
+										>💬</span
+									>
+									<span class="cta-stat-text"
+										>24/7 Support Included</span
+									>
+								</div>
+							</div>
+
+							<!-- Primary Actions -->
+							<div class="cta-actions">
+								<button
+									class="btn btn-primary btn-lg cta-main-btn"
+									onclick="openModal()"
+								>
+									<span class="btn-text"
+										>Start Free Trial Now</span
+									>
+									<span class="btn-arrow">→</span>
+								</button>
+								<button
+									class="btn btn-ghost cta-secondary-btn"
+								>
+									<span class="btn-text"
+										>See Pricing Plans</span
+									>
+									<span class="btn-icon">↓</span>
+								</button>
+							</div>
+
+							<!-- Trust Indicators -->
+							<div class="cta-trust">
+								<span class="trust-text"
+									>Trusted by schools
+									worldwide</span
+								>
+								<div class="trust-avatars">
+									<div class="trust-avatar">
+										👨‍🏫
+									</div>
+									<div class="trust-avatar">
+										👩‍🏫
+									</div>
+									<div class="trust-avatar">
+										👨‍💼
+									</div>
+									<div class="trust-avatar">
+										+5K
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- CTA Visual Element -->
+						<div class="cta-visual">
+							<div class="cta-card-container">
+								<div
+									class="cta-visual-card cta-card-1"
+								>
+									<div class="card-header-light">
+										<span class="icon-badge"
+											>📈</span
+										>
+										<span class="card-label"
+											>Performance</span
+										>
+									</div>
+									<div class="card-metric">
+										<span class="metric-value"
+											>94%</span
+										>
+										<span class="metric-label"
+											>Success Rate</span
+										>
+									</div>
+									<div class="card-bar">
+										<div class="bar-fill"></div>
+									</div>
+								</div>
+
+								<div
+									class="cta-visual-card cta-card-2"
+								>
+									<div class="card-header-light">
+										<span class="icon-badge"
+											>⚡</span
+										>
+										<span class="card-label"
+											>Efficiency</span
+										>
+									</div>
+									<div class="card-metric">
+										<span class="metric-value"
+											>3x</span
+										>
+										<span class="metric-label"
+											>Faster Results</span
+										>
+									</div>
+									<div class="card-bar">
+										<div
+											class="bar-fill bar-fill-2"
+										></div>
+									</div>
+								</div>
+
+								<div
+									class="cta-visual-card cta-card-3"
+								>
+									<div class="card-header-light">
+										<span class="icon-badge"
+											>✨</span
+										>
+										<span class="card-label"
+											>Engagement</span
+										>
+									</div>
+									<div class="card-metric">
+										<span class="metric-value"
+											>+500K</span
+										>
+										<span class="metric-label"
+											>Active Users</span
+										>
+									</div>
+									<div class="card-bar">
+										<div
+											class="bar-fill bar-fill-3"
+										></div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Floating Elements -->
+							<div
+								class="floating-element element-1"
+							>
+								<div class="pulse-ring"></div>
+							</div>
+							<div
+								class="floating-element element-2"
+							>
+								<div class="pulse-ring"></div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Bottom CTA Support Text -->
+					<div class="cta-footer-note">
+						<span class="icon">ℹ️</span>
+						<span class="text"
+							>Money-back guarantee if you're not
+							satisfied within 14 days. No
+							questions asked.</span
+						>
+					</div>
+				</div>
+			</section>
+
+			<!-- Pricing Section -->
+			<section
+				class="pricing"
+				id="pricing"
+			>
+				<!-- Background Elements -->
+				<div class="pricing-bg">
+					<div
+						class="pricing-circle pricing-circle-1"
+					></div>
+					<div
+						class="pricing-circle pricing-circle-2"
+					></div>
+					<div class="pricing-pattern"></div>
+				</div>
+
+				<div class="container">
+					<!-- Section Header -->
+					<div class="pricing-header">
+						<span class="pricing-tag">
+							<svg
+								width="18"
+								height="18"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<rect
+									x="1"
+									y="4"
+									width="22"
+									height="16"
+									rx="2"
+									ry="2"
+								></rect>
+								<line
+									x1="1"
+									y1="10"
+									x2="23"
+									y2="10"
+								></line>
+							</svg>
+							Pricing Plans
+						</span>
+						<h2 class="pricing-title">
+							Simple,
+							<span class="pricing-highlight"
+								>Transparent</span
+							>
+							Pricing
+						</h2>
+						<p class="pricing-description">
+							Choose the perfect plan for your
+							needs. All plans include a 30-day
+							free trial with full access to
+							features.
+						</p>
+					</div>
+
+					<!-- Pricing Toggle -->
+					<div class="pricing-toggle">
+						<button
+							class="toggle-btn active"
+							data-billing="monthly"
+						>
+							Monthly
+						</button>
+						<button
+							class="toggle-btn"
+							data-billing="annual"
+						>
+							Annual
+							<span class="toggle-save"
+								>Save 20%</span
+							>
+						</button>
+					</div>
+
+					<!-- Pricing Cards Grid -->
+					<div class="pricing-cards-grid">
+						<!-- Starter Plan -->
+						<div class="pricing-plan-card">
+							<div class="plan-header">
+								<div
+									class="plan-icon pricing-plan-icon-1"
+								>
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+										></path>
+										<circle
+											cx="12"
+											cy="7"
+											r="4"
+										></circle>
+									</svg>
+								</div>
+								<h3 class="plan-name">Starter</h3>
+								<p class="plan-desc">
+									Perfect for individual educators
+								</p>
+							</div>
+
+							<div class="plan-pricing">
+								<div class="plan-price">
+									<span class="plan-currency"
+										>$</span
+									>
+									<span
+										class="plan-amount"
+										data-monthly="29"
+										data-annual="23"
+										>29</span
+									>
+									<span class="plan-period"
+										>/month</span
+									>
+								</div>
+								<p class="plan-billing">
+									Billed monthly
+								</p>
+							</div>
+
+							<ul class="plan-features">
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span>Up to 30 students</span>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span>Basic AI assistant</span>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span>5GB cloud storage</span>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span>Email support</span>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span>Mobile app access</span>
+								</li>
+							</ul>
+
+							<button
+								class="btn btn-outline pricing-btn"
+								onclick="openModal()"
+							>
+								Start Free Trial
+							</button>
+						</div>
+
+						<!-- Professional Plan (Featured) -->
+						<div
+							class="pricing-plan-card pricing-plan-card-featured"
+						>
+							<div class="pricing-featured-badge">
+								Most Popular
+							</div>
+
+							<div class="plan-header">
+								<div
+									class="plan-icon pricing-plan-icon-2"
+								>
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+										></path>
+										<circle
+											cx="9"
+											cy="7"
+											r="4"
+										></circle>
+										<path
+											d="M23 21v-2a4 4 0 0 0-3-3.87"
+										></path>
+										<path
+											d="M16 3.13a4 4 0 0 1 0 7.75"
+										></path>
+									</svg>
+								</div>
+								<h3 class="plan-name">
+									Professional
+								</h3>
+								<p class="plan-desc">
+									Best for schools and departments
+								</p>
+							</div>
+
+							<div class="plan-pricing">
+								<div class="plan-price">
+									<span class="plan-currency"
+										>$</span
+									>
+									<span
+										class="plan-amount"
+										data-monthly="99"
+										data-annual="79"
+										>99</span
+									>
+									<span class="plan-period"
+										>/month</span
+									>
+								</div>
+								<p class="plan-billing">
+									Billed monthly
+								</p>
+							</div>
+
+							<ul class="plan-features">
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span>Up to 500 students</span>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span
+										>Advanced AI features</span
+									>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span>100GB cloud storage</span>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span
+										>Priority 24/7 support</span
+									>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span>Analytics dashboard</span>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span>Custom integrations</span>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span
+										>Teacher training
+										included</span
+									>
+								</li>
+							</ul>
+
+							<button
+								class="btn btn-primary pricing-btn"
+								onclick="openModal()"
+							>
+								Get Started
+							</button>
+						</div>
+
+						<!-- Enterprise Plan -->
+						<div class="pricing-plan-card">
+							<div class="plan-header">
+								<div
+									class="plan-icon pricing-plan-icon-3"
+								>
+									<svg
+										width="28"
+										height="28"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+										></path>
+										<polyline
+											points="9 22 9 12 15 12 15 22"
+										></polyline>
+									</svg>
+								</div>
+								<h3 class="plan-name">
+									Enterprise
+								</h3>
+								<p class="plan-desc">
+									For districts and large
+									organizations
+								</p>
+							</div>
+
+							<div class="plan-pricing">
+								<div
+									class="plan-price plan-price-custom"
+								>
+									<span class="plan-custom-label"
+										>Custom</span
+									>
+								</div>
+								<p class="plan-billing">
+									Contact us for pricing
+								</p>
+							</div>
+
+							<ul class="plan-features">
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span>Unlimited students</span>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span
+										>Full AI suite + custom
+										models</span
+									>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span
+										>Unlimited cloud storage</span
+									>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span
+										>Dedicated account
+										manager</span
+									>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span
+										>Advanced security &
+										compliance</span
+									>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span
+										>SSO & SAML integration</span
+									>
+								</li>
+								<li>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<polyline
+											points="20 6 9 17 4 12"
+										></polyline>
+									</svg>
+									<span
+										>On-site training &
+										onboarding</span
+									>
+								</li>
+							</ul>
+
+							<button
+								class="btn btn-outline pricing-btn"
+								onclick="openModal()"
+							>
+								Contact Sales
+							</button>
+						</div>
+					</div>
+
+					<!-- Pricing Features Comparison -->
+					<div class="pricing-features-section">
+						<h3 class="pricing-features-title">
+							All Plans Include
+						</h3>
+						<div class="pricing-features-grid">
+							<div class="pricing-feature-item">
+								<div class="pricing-feature-icon">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M12 2L2 7l10 5 10-5-10-5z"
+										></path>
+										<path
+											d="M2 17l10 5 10-5"
+										></path>
+										<path
+											d="M2 12l10 5 10-5"
+										></path>
+									</svg>
+								</div>
+								<h4 class="pricing-feature-name">
+									Free Updates
+								</h4>
+								<p class="pricing-feature-text">
+									Lifetime access to all feature
+									updates
+								</p>
+							</div>
+							<div class="pricing-feature-item">
+								<div class="pricing-feature-icon">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<rect
+											x="3"
+											y="11"
+											width="18"
+											height="11"
+											rx="2"
+											ry="2"
+										></rect>
+										<path
+											d="M7 11V7a5 5 0 0 1 10 0v4"
+										></path>
+									</svg>
+								</div>
+								<h4 class="pricing-feature-name">
+									Secure & Private
+								</h4>
+								<p class="pricing-feature-text">
+									Bank-level encryption for your
+									data
+								</p>
+							</div>
+							<div class="pricing-feature-item">
+								<div class="pricing-feature-icon">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+										></path>
+										<polyline
+											points="22 4 12 14.01 9 11.01"
+										></polyline>
+									</svg>
+								</div>
+								<h4 class="pricing-feature-name">
+									30-Day Trial
+								</h4>
+								<p class="pricing-feature-text">
+									No credit card required to start
+								</p>
+							</div>
+							<div class="pricing-feature-item">
+								<div class="pricing-feature-icon">
+									<svg
+										width="24"
+										height="24"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<path
+											d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+										></path>
+									</svg>
+								</div>
+								<h4 class="pricing-feature-name">
+									Expert Support
+								</h4>
+								<p class="pricing-feature-text">
+									Get help from our education
+									specialists
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<!-- Footer -->
+		<footer
+			class="footer"
+			id="contact"
+		>
+			<!-- Background Decoration -->
+			<div class="footer-bg">
+				<div class="footer-gradient"></div>
+				<div class="footer-pattern"></div>
+			</div>
+
+			<div class="container">
+				<!-- Main Footer Content -->
+				<div class="footer-main">
+					<!-- Brand Section -->
+					<div class="footer-brand">
+						<div class="footer-logo">
+							<svg
+								width="40"
+								height="40"
+								viewBox="0 0 40 40"
+								fill="none"
+							>
+								<circle
+									cx="20"
+									cy="20"
+									r="20"
+									fill="url(#footer-logo-gradient)"
+								/>
+								<path
+									d="M12 16H16V24H12V16Z"
+									fill="white"
+								/>
+								<path
+									d="M18 12H22V28H18V12Z"
+									fill="white"
+								/>
+								<path
+									d="M24 16H28V24H24V16Z"
+									fill="white"
+								/>
+								<defs>
+									<linearGradient
+										id="footer-logo-gradient"
+										x1="0"
+										y1="0"
+										x2="40"
+										y2="40"
+										gradientUnits="userSpaceOnUse"
+									>
+										<stop stop-color="#40E0D0" />
+										<stop
+											offset="1"
+											stop-color="#2BA89F"
+										/>
+									</linearGradient>
+								</defs>
+							</svg>
+							<span>InnovateTech</span>
+						</div>
+						<p class="footer-tagline">
+							Transforming education through
+							AI-powered learning solutions that
+							empower educators and inspire
+							students.
+						</p>
+
+						<!-- Newsletter -->
+						<div class="footer-newsletter">
+							<h4>Stay in the loop</h4>
+							<p>
+								Get the latest updates, tips, and
+								exclusive resources.
+							</p>
+							<form class="newsletter-form">
+								<div
+									class="newsletter-input-wrapper"
+								>
+									<svg
+										width="20"
+										height="20"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2"
+									>
+										<path
+											d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+										/>
+										<polyline
+											points="22,6 12,13 2,6"
+										/>
+									</svg>
+									<input
+										type="email"
+										placeholder="your@email.com"
+										required
+									/>
+								</div>
+								<button
+									type="submit"
+									class="newsletter-btn"
+								>
+									Subscribe
+									<svg
+										width="16"
+										height="16"
+										viewBox="0 0 24 24"
+										fill="none"
+										stroke="currentColor"
+										stroke-width="2.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									>
+										<line
+											x1="5"
+											y1="12"
+											x2="19"
+											y2="12"
+										/>
+										<polyline
+											points="12 5 19 12 12 19"
+										/>
+									</svg>
+								</button>
+							</form>
+						</div>
+					</div>
+
+					<!-- Navigation Links -->
+					<div class="footer-nav">
+						<div class="footer-nav-col">
+							<h4>Product</h4>
+							<ul>
+								<li>
+									<a href="#features">Features</a>
+								</li>
+								<li>
+									<a href="#pricing">Pricing</a>
+								</li>
+								<li>
+									<a href="#integrations"
+										>Integrations</a
+									>
+								</li>
+								<li>
+									<a href="#updates">Updates</a>
+								</li>
+								<li>
+									<a href="#roadmap">Roadmap</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer-nav-col">
+							<h4>Company</h4>
+							<ul>
+								<li>
+									<a href="#about">About</a>
+								</li>
+								<li>
+									<a href="#blog">Blog</a>
+								</li>
+								<li>
+									<a href="#careers">Careers</a>
+								</li>
+								<li>
+									<a href="#press">Press</a>
+								</li>
+								<li>
+									<a href="#contact">Contact</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer-nav-col">
+							<h4>Resources</h4>
+							<ul>
+								<li>
+									<a href="#help">Help Center</a>
+								</li>
+								<li>
+									<a href="#docs"
+										>Documentation</a
+									>
+								</li>
+								<li>
+									<a href="#api">API</a>
+								</li>
+								<li>
+									<a href="#community"
+										>Community</a
+									>
+								</li>
+								<li>
+									<a href="#status">Status</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="footer-nav-col">
+							<h4>Legal</h4>
+							<ul>
+								<li>
+									<a href="#privacy">Privacy</a>
+								</li>
+								<li>
+									<a href="#terms">Terms</a>
+								</li>
+								<li>
+									<a href="#security">Security</a>
+								</li>
+								<li>
+									<a href="#cookies">Cookies</a>
+								</li>
+								<li>
+									<a href="#licenses">Licenses</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- Footer Bottom -->
+				<div class="footer-bottom">
+					<div class="footer-bottom-left">
+						<p class="footer-copyright">
+							© 2025 InnovateTech. All rights
+							reserved.
+						</p>
+						<div class="footer-badges">
+							<span class="footer-badge">
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<path
+										d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+									/>
+								</svg>
+								SOC 2 Type II
+							</span>
+							<span class="footer-badge">
+								<svg
+									width="14"
+									height="14"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+								>
+									<rect
+										x="3"
+										y="11"
+										width="18"
+										height="11"
+										rx="2"
+										ry="2"
+									/>
+									<path
+										d="M7 11V7a5 5 0 0110 0v4"
+									/>
+								</svg>
+								GDPR Compliant
+							</span>
+						</div>
+					</div>
+
+					<div class="footer-bottom-right">
+						<div class="footer-social">
+							<a
+								href="#"
+								aria-label="X (formerly Twitter)"
+								class="footer-social-link"
+							>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+								>
+									<path
+										d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+									/>
+								</svg>
+							</a>
+							<a
+								href="#"
+								aria-label="LinkedIn"
+								class="footer-social-link"
+							>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+								>
+									<path
+										d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+									/>
+									<circle
+										cx="4"
+										cy="4"
+										r="2"
+									/>
+								</svg>
+							</a>
+							<a
+								href="#"
+								aria-label="GitHub"
+								class="footer-social-link"
+							>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+								>
+									<path
+										d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+									/>
+								</svg>
+							</a>
+							<a
+								href="#"
+								aria-label="YouTube"
+								class="footer-social-link"
+							>
+								<svg
+									width="18"
+									height="18"
+									viewBox="0 0 24 24"
+									fill="currentColor"
+								>
+									<path
+										d="M23 9.71a8.5 8.5 0 00-.91-4.13 2.92 2.92 0 00-1.72-1A78.36 78.36 0 0012 4.27a78.45 78.45 0 00-8.34.3 2.87 2.87 0 00-1.46.74c-.9.83-1 2.25-1.1 3.45a48.29 48.29 0 000 6.48 9.55 9.55 0 00.3 2 3.14 3.14 0 00.71 1.36 2.86 2.86 0 001.49.78 45.18 45.18 0 006.5.33c3.5.05 6.57 0 10.2-.28a2.88 2.88 0 001.53-.78 2.49 2.49 0 00.61-1 10.58 10.58 0 00.52-3.4c.04-.56.04-3.94.04-4.54zM9.74 14.85V8.66l5.92 3.11c-1.66.92-3.85 1.96-5.92 3.08z"
+									/>
+								</svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Sticky CTA -->
+		<div
+			class="sticky-cta"
+			id="sticky-cta"
+		>
+			<button class="btn btn-primary btn-sm">
+				Book Demo
+			</button>
+		</div>
+
+		<!-- Modern Demo Modal -->
+		<dialog
+			class="demo-modal"
+			id="demo-modal"
+			aria-labelledby="modal-title"
+		>
+			<div class="modal-backdrop"></div>
+			<div class="modal-container">
+				<button
+					class="modal-close"
+					id="close-modal"
+					aria-label="Close dialog"
+				>
+					<svg
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<line
+							x1="18"
+							y1="6"
+							x2="6"
+							y2="18"
+						></line>
+						<line
+							x1="6"
+							y1="6"
+							x2="18"
+							y2="18"
+						></line>
+					</svg>
+				</button>
+
+				<div class="modal-header">
+					<div class="modal-icon">
+						<svg
+							width="32"
+							height="32"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<rect
+								x="3"
+								y="4"
+								width="18"
+								height="18"
+								rx="2"
+								ry="2"
+							></rect>
+							<line
+								x1="16"
+								y1="2"
+								x2="16"
+								y2="6"
+							></line>
+							<line
+								x1="8"
+								y1="2"
+								x2="8"
+								y2="6"
+							></line>
+							<line
+								x1="3"
+								y1="10"
+								x2="21"
+								y2="10"
+							></line>
+						</svg>
+					</div>
+					<h2
+						id="modal-title"
+						class="modal-title"
+					>
+						Schedule Your Free Demo
+					</h2>
+					<p class="modal-subtitle">
+						See how InnovateTech can transform
+						your classroom in just 30 minutes
+					</p>
+				</div>
+
+				<form
+					class="modal-form"
+					id="demo-form"
+					aria-label="Demo booking form"
+				>
+					<div class="form-row">
+						<div class="form-field">
+							<label for="name">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path
+										d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+									></path>
+									<circle
+										cx="12"
+										cy="7"
+										r="4"
+									></circle>
+								</svg>
+								Full Name
+							</label>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder="John Doe"
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-field">
+							<label for="email">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path
+										d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+									></path>
+									<polyline
+										points="22,6 12,13 2,6"
+									></polyline>
+								</svg>
+								Email Address
+							</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="john@school.edu"
+								required
+							/>
+						</div>
+					</div>
+
+					<div class="form-row form-row-2">
+						<div class="form-field">
+							<label for="school">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path
+										d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+									></path>
+									<polyline
+										points="9 22 9 12 15 12 15 22"
+									></polyline>
+								</svg>
+								School/Organization
+							</label>
+							<input
+								type="text"
+								id="school"
+								name="school"
+								placeholder="Your School Name"
+								required
+							/>
+						</div>
+
+						<div class="form-field">
+							<label for="role">
+								<svg
+									width="16"
+									height="16"
+									viewBox="0 0 24 24"
+									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path
+										d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"
+									></path>
+									<circle
+										cx="8.5"
+										cy="7"
+										r="4"
+									></circle>
+									<line
+										x1="20"
+										y1="8"
+										x2="20"
+										y2="14"
+									></line>
+									<line
+										x1="23"
+										y1="11"
+										x2="17"
+										y2="11"
+									></line>
+								</svg>
+								Your Role
+							</label>
+							<select
+								id="role"
+								name="role"
+								required
+							>
+								<option value="">
+									Select your role
+								</option>
+								<option value="teacher">
+									Teacher
+								</option>
+								<option value="principal">
+									Principal
+								</option>
+								<option value="administrator">
+									Administrator
+								</option>
+								<option value="parent">
+									Parent
+								</option>
+								<option value="other">
+									Other
+								</option>
+							</select>
+						</div>
+					</div>
+
+					<button
+						type="submit"
+						class="btn btn-primary modal-submit"
+					>
+						<span>Schedule Free Demo</span>
+						<svg
+							width="20"
+							height="20"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<line
+								x1="5"
+								y1="12"
+								x2="19"
+								y2="12"
+							></line>
+							<polyline
+								points="12 5 19 12 12 19"
+							></polyline>
+						</svg>
+					</button>
+
+					<div class="modal-footer">
+						<svg
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							stroke-width="2"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+						>
+							<path
+								d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
+							></path>
+							<polyline
+								points="22 4 12 14.01 9 11.01"
+							></polyline>
+						</svg>
+						<span
+							>No credit card required • Cancel
+							anytime</span
+						>
+					</div>
+				</form>
+			</div>
+		</dialog>
+
+		<script src="script.js"></script>
+	</body>
 </html>
