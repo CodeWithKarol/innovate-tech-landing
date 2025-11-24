@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>
+			InnovateTech Landing Page - Modification
+			Instructions
+		</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				font-family: -apple-system,
+					BlinkMacSystemFont, "Segoe UI", Roboto,
+					Oxygen, Ubuntu, Cantarell, sans-serif;
+				line-height: 1.6;
+				color: #333;
+				background: #f5f5f5;
+				padding: 20px;
+			}
+			.container {
+				max-width: 1200px;
+				margin: 0 auto;
+				background: white;
+				padding: 40px;
+				border-radius: 12px;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+			}
+			h1 {
+				color: #40e0d0;
+				font-size: 2.5rem;
+				margin-bottom: 10px;
+				border-bottom: 3px solid #40e0d0;
+				padding-bottom: 15px;
+			}
+			h2 {
+				color: #2c3e50;
+				font-size: 1.8rem;
+				margin-top: 40px;
+				margin-bottom: 20px;
+				padding-left: 15px;
+				border-left: 4px solid #40e0d0;
+			}
+			h3 {
+				color: #34495e;
+				font-size: 1.3rem;
+				margin-top: 25px;
+				margin-bottom: 15px;
+			}
+			h4 {
+				color: #555;
+				font-size: 1.1rem;
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+			p {
+				margin-bottom: 15px;
+				color: #555;
+			}
+			code {
+				background: #f4f4f4;
+				padding: 2px 6px;
+				border-radius: 4px;
+				font-family: "Courier New", monospace;
+				color: #e74c3c;
+				font-size: 0.9em;
+			}
+			pre {
+				background: #2c3e50;
+				color: #ecf0f1;
+				padding: 20px;
+				border-radius: 8px;
+				overflow-x: auto;
+				margin: 15px 0;
+				border-left: 4px solid #40e0d0;
+			}
+			pre code {
+				background: none;
+				color: #ecf0f1;
+				padding: 0;
+			}
+			ul,
+			ol {
+				margin-left: 30px;
+				margin-bottom: 15px;
+			}
+			li {
+				margin-bottom: 8px;
+				color: #555;
+			}
+			.note {
+				background: #fff3cd;
+				border-left: 4px solid #ffc107;
+				padding: 15px;
+				margin: 20px 0;
+				border-radius: 4px;
+			}
+			.warning {
+				background: #f8d7da;
+				border-left: 4px solid #dc3545;
+				padding: 15px;
+				margin: 20px 0;
+				border-radius: 4px;
+			}
+			.tip {
+				background: #d1ecf1;
+				border-left: 4px solid #17a2b8;
+				padding: 15px;
+				margin: 20px 0;
+				border-radius: 4px;
+			}
+			.success {
+				background: #d4edda;
+				border-left: 4px solid #28a745;
+				padding: 15px;
+				margin: 20px 0;
+				border-radius: 4px;
+			}
+			table {
+				width: 100%;
+				border-collapse: collapse;
+				margin: 20px 0;
+			}
+			th,
+			td {
+				padding: 12px;
+				text-align: left;
+				border-bottom: 1px solid #ddd;
+			}
+			th {
+				background: #40e0d0;
+				color: white;
+				font-weight: 600;
+			}
+			tr:hover {
+				background: #f5f5f5;
+			}
+			.file-structure {
+				background: #f8f9fa;
+				padding: 15px;
+				border-radius: 6px;
+				font-family: "Courier New", monospace;
+				margin: 15px 0;
+			}
+			.toc {
+				background: #f8f9fa;
+				padding: 20px;
+				border-radius: 8px;
+				margin: 30px 0;
+			}
+			.toc ul {
+				list-style: none;
+				margin-left: 0;
+			}
+			.toc a {
+				color: #40e0d0;
+				text-decoration: none;
+				font-weight: 500;
+			}
+			.toc a:hover {
+				text-decoration: underline;
+			}
+			a {
+				color: #40e0d0;
+				text-decoration: none;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<h1>
+				📝 InnovateTech Landing Page -
+				Modification Instructions
+			</h1>
+			<p>
+				<strong>Version:</strong> 1.0 |
+				<strong>Last Updated:</strong> November
+				24, 2025
+			</p>
+
+			<div class="toc">
+				<h3>📑 Table of Contents</h3>
+				<ul>
+					<li>
+						<a href="#overview">1. Overview</a>
+					</li>
+					<li>
+						<a href="#file-structure"
+							>2. File Structure</a
+						>
+					</li>
+					<li>
+						<a href="#getting-started"
+							>3. Getting Started</a
+						>
+					</li>
+					<li>
+						<a href="#branding"
+							>4. Customizing Branding</a
+						>
+					</li>
+					<li>
+						<a href="#content"
+							>5. Modifying Content</a
+						>
+					</li>
+					<li>
+						<a href="#styling"
+							>6. Styling & Colors</a
+						>
+					</li>
+					<li>
+						<a href="#images"
+							>7. Working with Images</a
+						>
+					</li>
+					<li>
+						<a href="#forms"
+							>8. Form Configuration</a
+						>
+					</li>
+					<li>
+						<a href="#animations"
+							>9. Animations & Effects</a
+						>
+					</li>
+					<li>
+						<a href="#responsive"
+							>10. Responsive Design</a
+						>
+					</li>
+					<li>
+						<a href="#seo"
+							>11. SEO Optimization</a
+						>
+					</li>
+					<li>
+						<a href="#troubleshooting"
+							>12. Troubleshooting</a
+						>
+					</li>
+				</ul>
+			</div>
+
+			<h2 id="overview">1. Overview</h2>
+			<p>
+				This landing page is a modern, fully
+				responsive AI-powered learning platform
+				template. It includes multiple sections,
+				smooth animations, a demo request dialog,
+				and comprehensive styling.
+			</p>
+
+			<h3>Key Features:</h3>
+			<ul>
+				<li>
+					Fully responsive design (mobile, tablet,
+					desktop)
+				</li>
+				<li>
+					Smooth scroll animations using
+					Intersection Observer API
+				</li>
+				<li>
+					Interactive demo request modal/dialog
+				</li>
+				<li>
+					Modern gradient design with turquoise
+					brand color (#40E0D0)
+				</li>
+				<li>
+					Pricing tables with multiple plans
+				</li>
+				<li>
+					Testimonials section with customer
+					reviews
+				</li>
+				<li>
+					Mobile-friendly navigation with
+					hamburger menu
+				</li>
+				<li>
+					Form validation and submission handling
+				</li>
+			</ul>
+
+			<h2 id="file-structure">
+				2. File Structure
+			</h2>
+			<div class="file-structure">
+				innovate-tech-landing/ │ ├── index.html #
+				Main HTML file with all page structure ├──
+				styles.css # All styling and responsive
+				design ├── script.js # JavaScript for
+				interactions and animations ├──
+				favicon.svg # SVG favicon for browser tab
+				├── INSTRUCTIONS.html # This file -
+				modification guide ├── README.md # Project
+				documentation ├── LICENSE # License
+				information └── CNAME # Custom domain
+				configuration (if applicable)
+			</div>
+
+			<h2 id="getting-started">
+				3. Getting Started
+			</h2>
+
+			<h3>Quick Start (No Server Required)</h3>
+			<ol>
+				<li>
+					Open <code>index.html</code> directly in
+					your web browser
+				</li>
+				<li>
+					Make edits to HTML, CSS, or JavaScript
+					files
+				</li>
+				<li>
+					Refresh the browser to see changes
+				</li>
+			</ol>
+
+			<h3>Using a Local Server (Recommended)</h3>
+			<p>
+				For better development experience, use a
+				local server:
+			</p>
+
+			<h4>Option 1: VS Code Live Server</h4>
+			<ol>
+				<li>
+					Install "Live Server" extension in VS
+					Code
+				</li>
+				<li>
+					Right-click <code>index.html</code>
+				</li>
+				<li>Select "Open with Live Server"</li>
+			</ol>
+
+			<h4>Option 2: Python Server</h4>
+			<pre><code># Navigate to project folder
+cd innovate-tech-landing
+
+# Python 3
+python -m http.server 8000
+
+# Open browser to http://localhost:8000</code></pre>
+
+			<h4>Option 3: Node.js Server</h4>
+			<pre><code># Install http-server globally
+npm install -g http-server
+
+# Run server
+http-server -p 8000</code></pre>
+
+			<h2 id="branding">
+				4. Customizing Branding
+			</h2>
+
+			<h3>4.1 Changing the Company Name</h3>
+			<p>
+				Search and replace "InnovateTech"
+				throughout the files:
+			</p>
+			<pre><code>&lt;!-- In index.html --&gt;
+&lt;span class="brand-text"&gt;YourCompanyName&lt;/span&gt;
+
+&lt;title&gt;YourCompanyName - AI-Powered Learning Platform&lt;/title&gt;</code></pre>
+
+			<h3>4.2 Updating the Logo</h3>
+			<p>The logo appears in two places:</p>
+
+			<h4>
+				Navigation Logo (Line ~67 in index.html)
+			</h4>
+			<pre><code>&lt;img src="data:image/svg+xml;base64,..." 
+     alt="YourCompanyName Logo" 
+     class="logo" /&gt;</code></pre>
+			<p>
+				Replace the base64 SVG data with your own
+				logo image or use an external file:
+			</p>
+			<pre><code>&lt;img src="logo.png" alt="YourCompanyName Logo" class="logo" /&gt;</code></pre>
+
+			<h4>
+				Footer Logo (Line ~3393 in index.html)
+			</h4>
+			<pre><code>&lt;!-- Update the SVG inline logo in footer-brand section --&gt;</code></pre>
+
+			<h3>4.3 Changing the Favicon</h3>
+			<p>
+				Edit <code>favicon.svg</code> or replace
+				with your own:
+			</p>
+			<pre><code>&lt;!-- In index.html head section --&gt;
+&lt;link rel="icon" type="image/svg+xml" href="your-favicon.svg" /&gt;
+&lt;link rel="alternate icon" href="your-favicon.ico" /&gt;</code></pre>
+
+			<h3>
+				4.4 Updating Taglines & Descriptions
+			</h3>
+			<table>
+				<tr>
+					<th>Location</th>
+					<th>Description</th>
+					<th>Line (Approx)</th>
+				</tr>
+				<tr>
+					<td>Hero Headline</td>
+					<td>Main page headline</td>
+					<td>~187</td>
+				</tr>
+				<tr>
+					<td>Hero Subtitle</td>
+					<td>Supporting text under headline</td>
+					<td>~201</td>
+				</tr>
+				<tr>
+					<td>Meta Description</td>
+					<td>SEO description in &lt;head&gt;</td>
+					<td>~28</td>
+				</tr>
+				<tr>
+					<td>Footer Tagline</td>
+					<td>Brand description in footer</td>
+					<td>~3410</td>
+				</tr>
+			</table>
+
+			<h2 id="content">5. Modifying Content</h2>
+
+			<h3>5.1 Hero Section</h3>
+			<p>
+				Located at the top of the page (~lines
+				160-280 in index.html)
+			</p>
+			<pre><code>&lt;h1 class="hero-title"&gt;
+    Your Main Headline Here
+&lt;/h1&gt;
+
+&lt;p class="hero-subtitle"&gt;
+    Your supporting description text
+&lt;/p&gt;</code></pre>
+
+			<h3>5.2 Features Section (How It Works)</h3>
+			<p>Each feature card (~lines 350-800):</p>
+			<pre><code>&lt;div class="step-card"&gt;
+    &lt;div class="step-number"&gt;01&lt;/div&gt;
+    &lt;div class="step-icon"&gt;
+        &lt;!-- Update icon SVG here --&gt;
+    &lt;/div&gt;
+    &lt;h3 class="step-title"&gt;Your Feature Title&lt;/h3&gt;
+    &lt;p class="step-description"&gt;Your feature description&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+			<h3>5.3 Benefits Section</h3>
+			<p>
+				Update benefit cards (~lines 800-1300):
+			</p>
+			<pre><code>&lt;div class="benefit-card"&gt;
+    &lt;div class="benefit-icon"&gt;
+        &lt;!-- Icon SVG --&gt;
+    &lt;/div&gt;
+    &lt;h3 class="benefit-title"&gt;Benefit Title&lt;/h3&gt;
+    &lt;p class="benefit-description"&gt;Benefit description&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+
+			<h3>5.4 Testimonials</h3>
+			<p>
+				Modify customer testimonials (~lines
+				1570-2100):
+			</p>
+			<pre><code>&lt;div class="testimonial-card"&gt;
+    &lt;p class="testimonial-text"&gt;"Customer quote here"&lt;/p&gt;
+    &lt;div class="testimonial-author"&gt;
+        &lt;img src="avatar.jpg" alt="Customer Name" /&gt;
+        &lt;div&gt;
+            &lt;div class="author-name"&gt;Customer Name&lt;/div&gt;
+            &lt;div class="author-title"&gt;Job Title, Company&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+			<div class="tip">
+				<strong>💡 Tip:</strong> Use high-quality
+				customer photos (at least 300x300px) and
+				ensure you have permission to use
+				testimonials.
+			</div>
+
+			<h3>5.5 Pricing Plans</h3>
+			<p>
+				Update pricing information (~lines
+				2570-3370):
+			</p>
+			<pre><code>&lt;div class="pricing-plan-card"&gt;
+    &lt;div class="plan-header"&gt;
+        &lt;h3 class="plan-name"&gt;Plan Name&lt;/h3&gt;
+        &lt;div class="plan-price"&gt;
+            &lt;span class="price-amount"&gt;$99&lt;/span&gt;
+            &lt;span class="price-period"&gt;/month&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;ul class="plan-features"&gt;
+        &lt;li&gt;Feature 1&lt;/li&gt;
+        &lt;li&gt;Feature 2&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;button class="btn btn-primary" onclick="openModal()"&gt;
+        Get Started
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+			<h3>5.6 Footer Links</h3>
+			<p>
+				Update footer navigation (~lines
+				3420-3600):
+			</p>
+			<pre><code>&lt;div class="footer-column"&gt;
+    &lt;h4&gt;Section Name&lt;/h4&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#link"&gt;Link Name&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#link"&gt;Link Name&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+
+			<h2 id="styling">6. Styling & Colors</h2>
+
+			<h3>6.1 Primary Brand Colors</h3>
+			<p>
+				Main colors are defined throughout
+				<code>styles.css</code>. Key color values:
+			</p>
+
+			<table>
+				<tr>
+					<th>Color Purpose</th>
+					<th>Current Value</th>
+					<th>Usage</th>
+				</tr>
+				<tr>
+					<td>Primary Brand</td>
+					<td><code>#40E0D0</code></td>
+					<td>Buttons, accents, links</td>
+				</tr>
+				<tr>
+					<td>Secondary Brand</td>
+					<td><code>#26B4AA</code></td>
+					<td>Gradients, hover states</td>
+				</tr>
+				<tr>
+					<td>Dark Background</td>
+					<td><code>#0a0e1a</code></td>
+					<td>Header, footer, sections</td>
+				</tr>
+				<tr>
+					<td>Text Primary</td>
+					<td><code>#ffffff</code></td>
+					<td>Main text on dark backgrounds</td>
+				</tr>
+				<tr>
+					<td>Text Secondary</td>
+					<td>
+						<code>rgba(255,255,255,0.8)</code>
+					</td>
+					<td>Supporting text</td>
+				</tr>
+			</table>
+
+			<h3>6.2 Changing Brand Colors</h3>
+			<p>
+				Use Find & Replace in
+				<code>styles.css</code> to change all
+				instances:
+			</p>
+			<pre><code>/* Find: #40E0D0 */
+/* Replace with your primary color, e.g., #FF6B6B */
+
+/* Find: #26B4AA */
+/* Replace with your secondary color, e.g., #EE5A6F */</code></pre>
+
+			<div class="warning">
+				<strong>⚠️ Warning:</strong> Be careful
+				when replacing colors globally. Some hex
+				values might be used in multiple contexts.
+				Review changes carefully.
+			</div>
+
+			<h3>6.3 Typography</h3>
+			<p>
+				Font family is set at the top of
+				<code>styles.css</code>:
+			</p>
+			<pre><code>body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 
+                 'Segoe UI', Roboto, sans-serif;
+}</code></pre>
+
+			<p>To change fonts:</p>
+			<ol>
+				<li>
+					Add new Google Font link in
+					<code>index.html</code>
+					<code>&lt;head&gt;</code> section
+				</li>
+				<li>
+					Update <code>font-family</code> in
+					<code>styles.css</code>
+				</li>
+			</ol>
+
+			<pre><code>&lt;!-- In index.html head --&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" 
+      rel="stylesheet"&gt;
+
+/* In styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+}</code></pre>
+
+			<h3>6.4 Button Styles</h3>
+			<p>
+				Button classes are defined in
+				<code>styles.css</code> (~lines 600-900):
+			</p>
+			<pre><code>/* Primary Button */
+.btn-primary {
+    background: linear-gradient(135deg, #40E0D0, #26B4AA);
+    color: white;
+}
+
+/* Outline Button */
+.btn-outline {
+    background: transparent;
+    border: 2px solid #40E0D0;
+    color: #40E0D0;
+}</code></pre>
+
+			<h2 id="images">7. Working with Images</h2>
+
+			<h3>7.1 Current Image Usage</h3>
+			<p>This template uses:</p>
+			<ul>
+				<li>
+					<strong>Inline SVG:</strong> For icons,
+					logos, and decorative elements
+				</li>
+				<li>
+					<strong>Base64 Encoded:</strong> For the
+					main logo
+				</li>
+				<li>
+					<strong>External Images:</strong> For
+					testimonial avatars (placeholders)
+				</li>
+			</ul>
+
+			<h3>7.2 Adding External Images</h3>
+			<p>
+				Create an <code>images/</code> folder and
+				reference images:
+			</p>
+			<pre><code>&lt;img src="images/your-image.jpg" 
+     alt="Description" 
+     class="image-class" /&gt;</code></pre>
+
+			<h3>7.3 Optimizing Images</h3>
+			<div class="note">
+				<strong>📌 Best Practices:</strong>
+				<ul>
+					<li>
+						Use WebP format for better compression
+					</li>
+					<li>
+						Keep images under 200KB when possible
+					</li>
+					<li>
+						Use appropriate dimensions (don't load
+						4000px images for 400px display)
+					</li>
+					<li>
+						Add <code>loading="lazy"</code> for
+						images below the fold
+					</li>
+					<li>
+						Always include descriptive
+						<code>alt</code> text
+					</li>
+				</ul>
+			</div>
+
+			<pre><code>&lt;img src="images/feature.webp" 
+     alt="AI Dashboard showing student progress" 
+     loading="lazy"
+     width="800" 
+     height="600" /&gt;</code></pre>
+
+			<h3>7.4 Replacing SVG Icons</h3>
+			<p>Find SVG icons at:</p>
+			<ul>
+				<li>
+					<a
+						href="https://heroicons.com/"
+						target="_blank"
+						>Heroicons</a
+					>
+					(Free)
+				</li>
+				<li>
+					<a
+						href="https://feathericons.com/"
+						target="_blank"
+						>Feather Icons</a
+					>
+					(Free)
+				</li>
+				<li>
+					<a
+						href="https://fontawesome.com/"
+						target="_blank"
+						>Font Awesome</a
+					>
+					(Free & Pro)
+				</li>
+			</ul>
+
+			<h2 id="forms">8. Form Configuration</h2>
+
+			<h3>8.1 Demo Request Modal</h3>
+			<p>
+				The modal dialog is located at the end of
+				<code>index.html</code> (~lines
+				3750-4050):
+			</p>
+			<pre><code>&lt;dialog id="demo-modal" class="demo-modal"&gt;
+    &lt;form class="modal-form" id="demo-form"&gt;
+        &lt;!-- Form fields here --&gt;
+    &lt;/form&gt;
+&lt;/dialog&gt;</code></pre>
+
+			<h3>8.2 Form Submission Handling</h3>
+			<p>
+				Form handling is in
+				<code>script.js</code> (~lines 200-400):
+			</p>
+			<pre><code>// Current: Console log only
+demoForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    console.log("Form submitted");
+    // Add your form handling code here
+});</code></pre>
+
+			<h3>8.3 Integrating with Backend/API</h3>
+			<p>
+				Example: Send form data to your server:
+			</p>
+			<pre><code>demoForm.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    
+    const formData = new FormData(demoForm);
+    const data = Object.fromEntries(formData);
+    
+    try {
+        const response = await fetch('https://your-api.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data)
+        });
+        
+        if (response.ok) {
+            alert('Thank you! We will contact you soon.');
+            closeModalFunc();
+            demoForm.reset();
+        }
+    } catch (error) {
+        alert('Error submitting form. Please try again.');
+    }
+});</code></pre>
+
+			<h3>8.4 Popular Form Services</h3>
+			<table>
+				<tr>
+					<th>Service</th>
+					<th>Description</th>
+					<th>Pricing</th>
+				</tr>
+				<tr>
+					<td>Formspree</td>
+					<td>Simple form backend</td>
+					<td>Free tier available</td>
+				</tr>
+				<tr>
+					<td>Netlify Forms</td>
+					<td>Integrated with Netlify hosting</td>
+					<td>Free tier available</td>
+				</tr>
+				<tr>
+					<td>Google Forms</td>
+					<td>
+						Collect responses in Google Sheets
+					</td>
+					<td>Free</td>
+				</tr>
+				<tr>
+					<td>Basin</td>
+					<td>Form backend service</td>
+					<td>Paid plans</td>
+				</tr>
+			</table>
+
+			<h3>8.5 Newsletter Signup (Footer)</h3>
+			<p>
+				Newsletter form in footer (~line 3425):
+			</p>
+			<pre><code>&lt;form class="newsletter-form"&gt;
+    &lt;div class="newsletter-input-wrapper"&gt;
+        &lt;input type="email" 
+               placeholder="Enter your email" 
+               required /&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="newsletter-btn"&gt;
+        Subscribe
+    &lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+			<h2 id="animations">
+				9. Animations & Effects
+			</h2>
+
+			<h3>9.1 Scroll Animations</h3>
+			<p>
+				Animations are triggered using
+				Intersection Observer API in
+				<code>script.js</code> (~lines 857-916):
+			</p>
+			<pre><code>function initScrollAnimations() {
+    const sections = document.querySelectorAll('section');
+    
+    // Animation patterns for each section
+    const animationPatterns = [
+        null,           // Hero - no animation
+        'fade-scale',   // How It Works
+        'slide-left',   // Benefits
+        'slide-right',  // Demo
+        'fade-up',      // Testimonials
+        'fade-scale',   // For Schools
+        'fade-up',      // CTA
+        'slide-left'    // Pricing
+    ];
+}</code></pre>
+
+			<h3>9.2 Available Animation Types</h3>
+			<table>
+				<tr>
+					<th>Animation Class</th>
+					<th>Effect</th>
+					<th>Usage</th>
+				</tr>
+				<tr>
+					<td><code>fade-up</code></td>
+					<td>Fades in while moving up</td>
+					<td>General sections</td>
+				</tr>
+				<tr>
+					<td><code>fade-scale</code></td>
+					<td>Fades in while scaling up</td>
+					<td>Feature highlights</td>
+				</tr>
+				<tr>
+					<td><code>slide-left</code></td>
+					<td>Slides in from the left</td>
+					<td>Alternating sections</td>
+				</tr>
+				<tr>
+					<td><code>slide-right</code></td>
+					<td>Slides in from the right</td>
+					<td>Alternating sections</td>
+				</tr>
+			</table>
+
+			<h3>9.3 Disabling Animations</h3>
+			<p>
+				To disable scroll animations, comment out
+				or remove the initialization:
+			</p>
+			<pre><code>// In script.js, comment this line:
+// initScrollAnimations();</code></pre>
+
+			<h3>9.4 Customizing Animation Speed</h3>
+			<p>
+				In <code>styles.css</code> (~line 160):
+			</p>
+			<pre><code>section.animate-in {
+    animation-duration: 1s;  /* Change this value */
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-fill-mode: both;
+}</code></pre>
+
+			<h3>9.5 Hover Effects</h3>
+			<p>
+				Cards and buttons have hover effects.
+				Example from <code>styles.css</code>:
+			</p>
+			<pre><code>.benefit-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.benefit-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(64, 224, 208, 0.3);
+}</code></pre>
+
+			<h2 id="responsive">
+				10. Responsive Design
+			</h2>
+
+			<h3>10.1 Breakpoints</h3>
+			<p>
+				The template uses these responsive
+				breakpoints:
+			</p>
+			<table>
+				<tr>
+					<th>Breakpoint</th>
+					<th>Width</th>
+					<th>Target Devices</th>
+				</tr>
+				<tr>
+					<td>Desktop</td>
+					<td>1025px+</td>
+					<td>
+						Desktop computers, large laptops
+					</td>
+				</tr>
+				<tr>
+					<td>Tablet</td>
+					<td>769px - 1024px</td>
+					<td>Tablets, small laptops</td>
+				</tr>
+				<tr>
+					<td>Mobile</td>
+					<td>481px - 768px</td>
+					<td>Large phones, small tablets</td>
+				</tr>
+				<tr>
+					<td>Small Mobile</td>
+					<td>320px - 480px</td>
+					<td>Small phones</td>
+				</tr>
+			</table>
+
+			<h3>10.2 Media Query Structure</h3>
+			<p>
+				Media queries are organized throughout
+				<code>styles.css</code>:
+			</p>
+			<pre><code>/* Desktop First Approach */
+.element {
+    /* Desktop styles */
+}
+
+@media (max-width: 1024px) {
+    .element {
+        /* Tablet styles */
+    }
+}
+
+@media (max-width: 768px) {
+    .element {
+        /* Mobile styles */
+    }
+}
+
+@media (max-width: 480px) {
+    .element {
+        /* Small mobile styles */
+    }
+}</code></pre>
+
+			<h3>10.3 Mobile Navigation</h3>
+			<p>
+				The hamburger menu is controlled in
+				<code>script.js</code>:
+			</p>
+			<pre><code>function openMobileNav() {
+    navMenu.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMobileNav() {
+    navMenu.classList.remove('active');
+    document.body.style.overflow = '';
+}</code></pre>
+
+			<h3>10.4 Testing Responsive Design</h3>
+			<div class="tip">
+				<strong>💡 Testing Tools:</strong>
+				<ul>
+					<li>
+						<strong>Chrome DevTools:</strong>
+						Press F12 → Toggle device toolbar
+						(Ctrl+Shift+M)
+					</li>
+					<li>
+						<strong
+							>Firefox Responsive Mode:</strong
+						>
+						Press F12 → Responsive Design Mode
+						(Ctrl+Shift+M)
+					</li>
+					<li>
+						<strong>Real Devices:</strong> Test on
+						actual phones and tablets
+					</li>
+					<li>
+						<strong>BrowserStack:</strong> Test on
+						multiple devices/browsers online
+					</li>
+				</ul>
+			</div>
+
+			<h2 id="seo">11. SEO Optimization</h2>
+
+			<h3>11.1 Meta Tags</h3>
+			<p>
+				Update SEO meta tags in
+				<code>index.html</code>
+				<code>&lt;head&gt;</code> section:
+			</p>
+			<pre><code>&lt;title&gt;Your Company - Your Value Proposition&lt;/title&gt;
+
+&lt;meta name="description" 
+      content="Compelling description under 160 characters" /&gt;
+
+&lt;meta name="keywords" 
+      content="keyword1, keyword2, keyword3" /&gt;
+
+&lt;!-- Open Graph (Facebook, LinkedIn) --&gt;
+&lt;meta property="og:title" content="Your Company Name" /&gt;
+&lt;meta property="og:description" content="Your description" /&gt;
+&lt;meta property="og:image" content="https://yoursite.com/og-image.jpg" /&gt;
+&lt;meta property="og:url" content="https://yoursite.com" /&gt;
+
+&lt;!-- Twitter Card --&gt;
+&lt;meta name="twitter:card" content="summary_large_image" /&gt;
+&lt;meta name="twitter:title" content="Your Company Name" /&gt;
+&lt;meta name="twitter:description" content="Your description" /&gt;
+&lt;meta name="twitter:image" content="https://yoursite.com/twitter-image.jpg" /&gt;</code></pre>
+
+			<h3>11.2 Semantic HTML</h3>
+			<p>
+				The template uses semantic HTML5 elements:
+			</p>
+			<ul>
+				<li>
+					<code>&lt;header&gt;</code> - Site
+					header
+				</li>
+				<li>
+					<code>&lt;nav&gt;</code> - Navigation
+					menus
+				</li>
+				<li>
+					<code>&lt;main&gt;</code> - Main content
+				</li>
+				<li>
+					<code>&lt;section&gt;</code> - Content
+					sections
+				</li>
+				<li>
+					<code>&lt;article&gt;</code> -
+					Independent content
+				</li>
+				<li>
+					<code>&lt;footer&gt;</code> - Site
+					footer
+				</li>
+			</ul>
+
+			<h3>11.3 Structured Data (Schema.org)</h3>
+			<p>Add structured data for better SEO:</p>
+			<pre><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Your Company Name",
+  "url": "https://yoursite.com",
+  "logo": "https://yoursite.com/logo.png",
+  "description": "Your company description",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+1-XXX-XXX-XXXX",
+    "contactType": "Customer Service"
+  }
+}
+&lt;/script&gt;</code></pre>
+
+			<h3>11.4 Sitemap</h3>
+			<p>
+				Create a <code>sitemap.xml</code> file:
+			</p>
+			<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"&gt;
+   &lt;url&gt;
+      &lt;loc&gt;https://yoursite.com/&lt;/loc&gt;
+      &lt;lastmod&gt;2025-11-24&lt;/lastmod&gt;
+      &lt;priority&gt;1.0&lt;/priority&gt;
+   &lt;/url&gt;
+&lt;/urlset&gt;</code></pre>
+
+			<h3>11.5 Performance Optimization</h3>
+			<div class="success">
+				<strong>✅ Performance Checklist:</strong>
+				<ul>
+					<li>
+						✅ Minimize CSS and JavaScript (use
+						minifiers)
+					</li>
+					<li>
+						✅ Optimize images (use WebP,
+						compress)
+					</li>
+					<li>✅ Use lazy loading for images</li>
+					<li>
+						✅ Enable GZIP compression on server
+					</li>
+					<li>✅ Use CDN for static assets</li>
+					<li>✅ Minimize HTTP requests</li>
+					<li>✅ Add cache headers</li>
+				</ul>
+			</div>
+
+			<h2 id="troubleshooting">
+				12. Troubleshooting
+			</h2>
+
+			<h3>12.1 Modal/Dialog Not Opening</h3>
+			<p>
+				<strong>Issue:</strong> Clicking CTA
+				buttons doesn't open the modal
+			</p>
+			<p><strong>Solution:</strong></p>
+			<ol>
+				<li>
+					Check browser console for JavaScript
+					errors (F12)
+				</li>
+				<li>
+					Verify
+					<code>onclick="openModal()"</code> is on
+					the button
+				</li>
+				<li>
+					Ensure <code>script.js</code> is loaded
+				</li>
+				<li>
+					Check that dialog element has
+					<code>id="demo-modal"</code>
+				</li>
+			</ol>
+
+			<h3>12.2 Animations Not Working</h3>
+			<p>
+				<strong>Issue:</strong> Scroll animations
+				don't trigger
+			</p>
+			<p><strong>Solution:</strong></p>
+			<ol>
+				<li>
+					Verify browser supports Intersection
+					Observer (IE11 doesn't)
+				</li>
+				<li>Check console for errors</li>
+				<li>
+					Ensure
+					<code>initScrollAnimations()</code> is
+					being called
+				</li>
+				<li>
+					Verify animation classes are in
+					<code>styles.css</code>
+				</li>
+			</ol>
+
+			<h3>12.3 Mobile Menu Not Working</h3>
+			<p>
+				<strong>Issue:</strong> Hamburger menu
+				doesn't open/close
+			</p>
+			<p><strong>Solution:</strong></p>
+			<ol>
+				<li>
+					Check that hamburger button has correct
+					event listeners
+				</li>
+				<li>
+					Verify <code>.nav-menu.active</code> CSS
+					is present
+				</li>
+				<li>Clear browser cache</li>
+			</ol>
+
+			<h3>12.4 Styling Issues</h3>
+			<p>
+				<strong>Issue:</strong> CSS not applying
+				correctly
+			</p>
+			<p><strong>Solution:</strong></p>
+			<ol>
+				<li>
+					Hard refresh browser (Ctrl+Shift+R or
+					Cmd+Shift+R)
+				</li>
+				<li>
+					Check <code>styles.css</code> is linked
+					in <code>&lt;head&gt;</code>
+				</li>
+				<li>Verify no CSS syntax errors</li>
+				<li>
+					Check browser developer tools for
+					overridden styles
+				</li>
+				<li>Ensure correct CSS specificity</li>
+			</ol>
+
+			<h3>12.5 Form Submission Issues</h3>
+			<p>
+				<strong>Issue:</strong> Form doesn't
+				submit or gives errors
+			</p>
+			<p><strong>Solution:</strong></p>
+			<ol>
+				<li>
+					Check <code>preventDefault()</code> is
+					called in form handler
+				</li>
+				<li>
+					Verify all required fields have
+					<code>required</code> attribute
+				</li>
+				<li>
+					Check network tab in DevTools for API
+					errors
+				</li>
+				<li>
+					Ensure CORS is configured if submitting
+					to external API
+				</li>
+			</ol>
+
+			<h3>12.6 Browser Compatibility</h3>
+			<table>
+				<tr>
+					<th>Feature</th>
+					<th>Supported Browsers</th>
+					<th>Fallback</th>
+				</tr>
+				<tr>
+					<td>CSS Grid</td>
+					<td>All modern browsers</td>
+					<td>Flexbox for older browsers</td>
+				</tr>
+				<tr>
+					<td>Dialog Element</td>
+					<td>
+						Chrome 37+, Firefox 98+, Safari 15.4+
+					</td>
+					<td>
+						Use polyfill or convert to div modal
+					</td>
+				</tr>
+				<tr>
+					<td>Intersection Observer</td>
+					<td>All modern browsers</td>
+					<td>Polyfill or disable animations</td>
+				</tr>
+				<tr>
+					<td>CSS Variables</td>
+					<td>All modern browsers</td>
+					<td>Use Sass/SCSS preprocessing</td>
+				</tr>
+			</table>
+
+			<h3>12.7 Getting Help</h3>
+			<div class="note">
+				<strong>📌 Support Resources:</strong>
+				<ul>
+					<li>
+						<strong>Documentation:</strong> Refer
+						to this file and README.md
+					</li>
+					<li>
+						<strong>Browser DevTools:</strong> Use
+						console, network, and elements tabs
+					</li>
+					<li>
+						<strong>Validate HTML:</strong>
+						<a
+							href="https://validator.w3.org/"
+							target="_blank"
+							>W3C HTML Validator</a
+						>
+					</li>
+					<li>
+						<strong>Validate CSS:</strong>
+						<a
+							href="https://jigsaw.w3.org/css-validator/"
+							target="_blank"
+							>W3C CSS Validator</a
+						>
+					</li>
+					<li>
+						<strong>Community:</strong> Stack
+						Overflow, Reddit r/webdev
+					</li>
+				</ul>
+			</div>
+
+			<hr
+				style="
+					margin: 40px 0;
+					border: none;
+					border-top: 2px solid #e0e0e0;
+				"
+			/>
+
+			<h2>📚 Additional Resources</h2>
+			<ul>
+				<li>
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+						target="_blank"
+						>MDN Web Docs - HTML</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+						target="_blank"
+						>MDN Web Docs - CSS</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+						target="_blank"
+						>MDN Web Docs - JavaScript</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://web.dev/"
+						target="_blank"
+						>web.dev - Web Development Best
+						Practices</a
+					>
+				</li>
+				<li>
+					<a
+						href="https://css-tricks.com/"
+						target="_blank"
+						>CSS-Tricks</a
+					>
+				</li>
+			</ul>
+
+			<hr
+				style="
+					margin: 40px 0;
+					border: none;
+					border-top: 2px solid #e0e0e0;
+				"
+			/>
+
+			<div class="success">
+				<h3>🎉 You're Ready to Customize!</h3>
+				<p>
+					This guide covers all major aspects of
+					modifying your landing page. Start with
+					small changes and test frequently.
+					Remember to backup your files before
+					making major modifications.
+				</p>
+				<p><strong>Happy coding!</strong> 🚀</p>
+			</div>
+
+			<p
+				style="
+					text-align: center;
+					margin-top: 40px;
+					color: #999;
+					font-size: 0.9em;
+				"
+			>
+				InnovateTech Landing Page Template v1.0<br />
+				Last Updated: November 24, 2025
+			</p>
+		</div>
+	</body>
+</html>
