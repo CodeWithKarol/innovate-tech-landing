@@ -25,6 +25,7 @@ function initNeuralNetworkAnimation() {
 	const connectionsSvg = document.querySelector(
 		".connections-svg"
 	);
+	if (!connectionsSvg) return;
 	const nodes =
 		document.querySelectorAll(".node");
 	const center = { x: 200, y: 200 };
@@ -913,3 +914,33 @@ document.addEventListener(
 		initScrollAnimations();
 	}
 );
+
+// Video Modal Logic
+const videoModal = document.getElementById('video-modal');
+const videoFrame = document.getElementById('demo-video-frame');
+// Using a generic tech/future learning video
+const videoUrl = 'https://www.youtube.com/embed/LXb3EKWsInQ?autoplay=1';
+
+function openVideoModal() {
+    if (videoModal && videoFrame) {
+        videoFrame.src = videoUrl;
+        videoModal.showModal();
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeVideoModal() {
+    if (videoModal && videoFrame) {
+        videoModal.close();
+        videoFrame.src = '';
+        document.body.style.overflow = '';
+    }
+}
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && videoModal && videoModal.open) {
+        closeVideoModal();
+    }
+});
+
